@@ -50,21 +50,17 @@ class Contact extends React.PureComponent {
           </Fade>
           <Fade right duration={2000}>
             <div className="column center aligned">
-              {/* <h2 className="ui horizontal divider header white"> */}
-              {/* <i className="address card icon"> </i> */}
-              {/* CONTACT US */}
-              {/* </h2> */}
               <div
                 style={{
                   position: 'relative',
                   overflow: 'hidden',
-                  height: 550,
+                  height: 650,
                 }}
               >
                 <iframe
                   src="https://docs.google.com/forms/d/e/1FAIpQLSdio0GprJhF0xm1JZqVeOzpLfNoP_xSHL4KGJzlEmGzrag0yA/viewform?embedded=true"
                   width="640"
-                  height="550"
+                  height="650"
                   frameBorder="0"
                   marginHeight="0"
                   marginWidth="0"
@@ -73,26 +69,6 @@ class Contact extends React.PureComponent {
                   Loading...
                 </iframe>
               </div>
-              {/* <div className="ui tiny form"> */}
-              {/* <div className="two fields"> */}
-              {/* <div className="field"> */}
-              {/* <label>Full name</label> */}
-              {/* <input type="text" placeholder="Full Name"/> */}
-              {/* </div> */}
-              {/* <div className="field"> */}
-              {/* <label>Email Address</label> */}
-              {/* <input type="text" name="Email" placeholder="Email"/> */}
-              {/* </div> */}
-              {/* </div> */}
-              {/* <div className="field"> */}
-              {/* <label>Message</label> */}
-              {/* <textarea rows="2"/> */}
-              {/* </div> */}
-              {/* <button className="ui right labeled icon button"> */}
-              {/* <i className="paper plane icon"> </i> */}
-              {/* Send */}
-              {/* </button> */}
-              {/* </div> */}
             </div>
           </Fade>
         </div>

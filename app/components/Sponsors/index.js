@@ -11,12 +11,19 @@ import React from 'react';
 // import { FormattedMessage } from 'react-intl';
 // import messages from './messages';
 import Golden from './golden.png';
+import background from '../Committee/background.jpg';
 
 /* eslint-disable react/prefer-stateless-function */
 class Sponsors extends React.PureComponent {
   render() {
     return (
-      <div className="sponsor overlay">
+      <div
+        className="sponsor overlay"
+        style={{
+          backgroundImage: `url(${background})`,
+          backgroundSize: 'cover',
+        }}
+      >
         <div>
           <h1 style={{ textAlign: 'center' }} className="white">
             SPONSORS

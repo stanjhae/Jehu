@@ -95,7 +95,7 @@ class AboutDebmun extends React.PureComponent {
           </div>
           {/* </Fade> */}
           {/* <Fade left delay={1000}> */}
-          <div className="eight wide column center aligned aboutMun"> </div>
+          <div className="eight wide column center aligned aboutMun2"> </div>
           {/* </Fade> */}
         </div>
       </div>

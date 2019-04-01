@@ -173,15 +173,15 @@ class Header extends React.Component {
                       Getting Around in Debrecen
                     </Dropdown.Item>
                     <Dropdown.Divider />
-                    <Dropdown.Item
-                      as={HeaderLink}
-                      to="/accommodation"
-                      onClick={this.closeMenu}
-                    >
-                      <Icon name="home" color="red" size="large" />
-                      Accommodation
-                    </Dropdown.Item>
-                    <Dropdown.Divider />
+                    {/* <Dropdown.Item */}
+                    {/* as={HeaderLink} */}
+                    {/* to="/accommodation" */}
+                    {/* onClick={this.closeMenu} */}
+                    {/* > */}
+                    {/* <Icon name="home" color="red" size="large" /> */}
+                    {/* Accommodation */}
+                    {/* </Dropdown.Item> */}
+                    {/* <Dropdown.Divider /> */}
                     <Dropdown.Item onClick={this.closeMenu}>
                       <a
                         href={delegate}
@@ -189,7 +189,7 @@ class Header extends React.Component {
                         style={{ color: '#000' }}
                       >
                         <Icon name="briefcase" color="red" size="large" />
-                        Delegate Kit
+                        Download Delegate Kit
                       </a>
                     </Dropdown.Item>
                   </Dropdown.Menu>

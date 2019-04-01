@@ -18,7 +18,7 @@ class AboutMun extends React.PureComponent {
       <div className="ui vertically padded middle aligned stackable grid container secLetter">
         <div className="row">
           {/* <Fade left delay={1000}> */}
-          <div className="eight wide column center aligned aboutMun"> </div>
+          <div className="eight wide column center aligned aboutMun1"> </div>
           {/* </Fade> */}
           {/* <Fade right delay={1000}> */}
           <div className="ui eight wide column seventyHeight aboutMunText">

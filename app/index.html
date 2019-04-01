@@ -11,8 +11,31 @@
   <!-- Allow installing the app to the homescreen -->
   <meta name="mobile-web-app-capable" content="yes">
 
-  <link rel="icon" href="/favicon.ico" />
-  <title>React.js Boilerplate</title>
+  <link rel="icon" href="/icon-512x512.png" />
+  <link rel="shortcut icon" href="/icon-512x512.png" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700|Roboto+Condensed" rel="stylesheet">
+
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WQGFDKZ');</script>
+
+  <title>DebMUN - Debrecen Model United Nations</title>
+  <meta name="Description" content="Apply now to be a part of the biggest University level MUN in Europe" />
+  <meta name="keywords" content="Model, United, Nations, Debrecen, Event, Europe">
+  <meta name="google-site-verification" content="BkG0eZYEpss-MYokHmT2vXjLFsdP3wWvRzG2KrCEFqI" />
+  <link rel="canonical" href="https://debmun.com/">
+  <meta property="og:title" content="Debmun">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://debmun.com/">
+  <meta property="og:site_name" content="Debmun">
+  <meta property="og:description" content="Apply now to be a part of the biggest University level MUN in Europe">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Debmun">
+  <meta name="twitter:description" content="Apply now to be a part of the biggest University level MUN in Europe">
+
 </head>
 
 <body>
@@ -28,6 +51,15 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
   <!-- A lot of magic happens in this file. HtmlWebpackPlugin automatically injects all assets (e.g. bundle.js, main.css) with the correct HTML tags, which is why they are missing in this file. Don't add any assets here! (Check out webpack.dev.babel.js and webpack.prod.babel.js if you want to know more) -->
+  <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-app.js"></script>
+  <script>
+    const config = {
+      apiKey: "AIzaSyB35DS9MzAzuYhwPesznyxCDCSFcUSVR90",
+      projectId: "debmun-98fb0",
+    };
+    firebase.initializeApp(config);
+  </script>
+
 </body>
 
 </html>

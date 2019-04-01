@@ -16,6 +16,7 @@ import UNHRC from './UNHRC.png';
 import WHO from './WHO.png';
 import whoAgenda from './who.pdf';
 import SCAgenda from './sc.pdf';
+import background from './background.jpg';
 
 /* eslint-disable react/prefer-stateless-function */
 class Committee extends React.PureComponent {
@@ -32,7 +33,13 @@ class Committee extends React.PureComponent {
   render() {
     const { activeIndex } = this.state;
     return (
-      <div className="accordionContain overlay">
+      <div
+        className="accordionContain overlay"
+        style={{
+          backgroundImage: `url(${background})`,
+          backgroundSize: 'cover',
+        }}
+      >
         <div className="ui container">
           <h1 style={{ textAlign: 'center' }} className="white">
             COMMITTEES

@@ -32,6 +32,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 !important;
     border-radius: 0 !important;
 }
+.letter div p{
+  text-align: justify
+}
 .App{
     position: relative;
     z-index: 1;
@@ -157,7 +160,7 @@ const GlobalStyle = createGlobalStyle`
     background-image: url("https://farm5.staticflickr.com/4394/36396494843_64a6d0759d_h.jpg");
     background-size: cover;
     color: #fff !important;
-    height: 90vh;
+    min-height: 90vh;
     position: relative;
 }
 .footer{
@@ -245,7 +248,17 @@ const GlobalStyle = createGlobalStyle`
     min-height: 70vh;
 }
 .aboutMun {
-    background: url("/assets/images/aboutMun.jpg") center;
+    background: url("http://www.cwmun.org/wp-content/uploads/2016/05/L853056-1024x683.jpg") center;
+    background-size: cover;
+    min-height: 70vh;
+}
+.aboutMun1 {
+    background: url("https://static1.squarespace.com/static/59b0d245e45a7ce2046793d1/t/5a246888f9619ac01b0b0753/1512335526642/International+flags+at+ShawMUN?format=1000w") center;
+    background-size: cover;
+    min-height: 70vh;
+}
+.aboutMun2 {
+    background: url("https://bestdelegate.com/wp-content/uploads/2013/01/tumblr_lyn2qzO22G1r2hszso1_500.jpg") center;
     background-size: cover;
     min-height: 70vh;
 }
@@ -326,20 +339,24 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
 }
 .accordionContain{
-    min-height: 82vh;
-    padding-top: 100px;
-    background: url("/assets/images/conference.jpg") center;
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
+    padding-top: 60px;
+    min-height: 85vh;
+    background-position: center;
 }
 
 .delegateApply{
-    min-height: 82vh;
-    padding-top: 100px;
-    background: url("/assets/images/doodle.jpg") center;
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
+    padding-top: 60px;
+    min-height: 85vh;
+    background-position: center;
 }
 .partner{
-    background: url("/assets/images/mainBuilding.jpg") center;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;

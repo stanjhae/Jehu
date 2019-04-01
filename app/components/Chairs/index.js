@@ -5,6 +5,7 @@
  */
 
 import React from 'react';
+import background from '../Committee/background.jpg';
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 
@@ -15,7 +16,10 @@ import React from 'react';
 class Chairs extends React.PureComponent {
   render() {
     return (
-      <div className="ui grid delegateApply overlay">
+      <div
+        className="ui grid delegateApply overlay"
+        style={{ backgroundImage: `url(${background})` }}
+      >
         <div className="row centered center aligned">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSfF7nWQC8ZvhGOw2eqe83ggrRrU1qwj7uFIjy5m906fJyVKTg/viewform?embedded=true"

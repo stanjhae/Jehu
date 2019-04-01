@@ -39,19 +39,25 @@ class Home extends React.PureComponent {
           <div>
             <div top duration={1000}>
               {/* <img src={"/assets/images/conference.small.jpg"} srcSet={`/assets/images/conference.jpg 300w, /assets/images/conference.jpg 768w, /assets/images/conference.jpg 1280w`} /> */}
-              <img alt="slide" src={Slide1} />
+              <img alt="slide" src={Slide3} />
             </div>
+          </div>
+          <div>
+            <img alt="slide" src={Slide1} />
             <div className="debmunAnnounce">
               <div right duration={1000}>
                 <h1>DEBRECEN MODEL UNITED NATIONS 2019</h1>
                 <br />
               </div>
               <div left duration={2000} delay={500}>
-                <h1>21 - 23 March 2019</h1>
+                <h1>26 - 28 April 2019</h1>
+                <br />
+              </div>
+              <div left duration={2000} delay={500}>
+                <h1>GRAND HOTEL ARANYBIKA</h1>
                 <br />
               </div>
               <div right duration={2000} delay={1000}>
-                <h1>DEBRECEN UNIVERSITY</h1>
                 <br />
               </div>
               <div bottom delay={3000}>
@@ -70,17 +76,32 @@ class Home extends React.PureComponent {
           <div>
             <img alt="slide" src={Slide2} />
             <div className="debmunAnnounce">
-              <div right duration={3000}>
-                <h1>UNIVERSITY OF DEBRECEN</h1>
+              <div right duration={1000}>
+                <h1>DEBRECEN MODEL UNITED NATIONS 2019</h1>
+                <br />
               </div>
-            </div>
-          </div>
-          <div>
-            <img alt="slide" src={Slide3} />
-            <div className="debmunAnnounce">
-              {/* <div right duration={3000}> */}
-              {/* <h1>CITY CENTRE DEBRECEN</h1> */}
-              {/* </div> */}
+              <div left duration={2000} delay={500}>
+                <h1>26 - 28 April 2019</h1>
+                <br />
+              </div>
+              <div left duration={2000} delay={500}>
+                <h1>GRAND HOTEL ARANYBIKA</h1>
+                <br />
+              </div>
+              <div right duration={2000} delay={1000}>
+                <br />
+              </div>
+              <div bottom delay={3000}>
+                <button type="button" className="ui big blue button">
+                  <a
+                    href="https://www.facebook.com/events/272327660140239/"
+                    style={{ color: '#fff' }}
+                    target="_blank"
+                  >
+                    Discover DebMUN 2019
+                  </a>
+                </button>
+              </div>
             </div>
           </div>
         </Carousel>
@@ -93,7 +114,7 @@ class Home extends React.PureComponent {
           <div className="column">
             <Fade right delay={1000}>
               <p>
-                <Countdown date={new Date('2019/4/21')} />
+                <Countdown date={new Date('2019/4/26')} />
               </p>
             </Fade>
           </div>
@@ -109,9 +130,12 @@ class Home extends React.PureComponent {
                 />
               </div>
             </div>
-            <div className="ui eleven wide column center aligned">
+            <div className="ui eleven wide column center aligned letter">
               <div top delay={1000}>
-                <h1 className="ui horizontal divider header">
+                <h1
+                  className="ui horizontal divider header"
+                  style={{ fontSize: 20 }}
+                >
                   SECRETARY GENERAL LETTER
                 </h1>
                 <br />

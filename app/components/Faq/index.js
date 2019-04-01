@@ -11,6 +11,7 @@ import React from 'react';
 // import { FormattedMessage } from 'react-intl';
 // import messages from './messages';
 import { Accordion, Icon } from 'semantic-ui-react';
+import background from '../Committee/background.jpg';
 
 /* eslint-disable react/prefer-stateless-function */
 class Faq extends React.PureComponent {
@@ -27,7 +28,10 @@ class Faq extends React.PureComponent {
   render() {
     const { activeIndex } = this.state;
     return (
-      <div className="accordionContain overlay">
+      <div
+        className="accordionContain overlay"
+        style={{ backgroundImage: `url(${background})` }}
+      >
         <h1 className="white" style={{ textAlign: 'center' }}>
           FREQUENTLY ASKED QUESTIONS
         </h1>
