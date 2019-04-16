@@ -1,0 +1,22 @@
+.header{
+  background-color: transparent !important;
+  color: #000 !important;
+  border: 0 none !important;
+ -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.logoLink{
+  background-color: dodgerblue !important;
+}
+.aboutLink{
+  background-color: firebrick !important;
+}
+.serviceLink{
+  background-color: dodgerblue !important;
+}
+.galleryLink{
+  background-color: forestgreen !important;
+}
+.contactLink{
+  background-color: yellow !important;
+}
