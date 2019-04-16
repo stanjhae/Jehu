@@ -119,18 +119,17 @@ class Committee extends React.PureComponent {
                     </h1>
                     <div className="ui large bulleted animated list">
                       <div className="item" style={{ textAlign: 'justify' }}>
-                        <strong>About: </strong>
-                        is one of the six principal organs of the United Nations
-                        (UN), the only one in which all member nations have
-                        equal representation, and the main deliberative,
-                        policy-making and representative organ of the UN. Its
-                        powers are to oversee the budget of the UN, appoint the
-                        non-permanent members to the Security Council, appoint
-                        the Secretary-General of the United Nations, receive
-                        reports from other parts of the UN and make
-                        recommendations in the form of General Assembly
-                        Resolutions It has also established numerous subsidiary
-                        organs
+                        <strong>About: </strong>is one of the six principal
+                        organs of the United Nations (UN), the only one in which
+                        all member nations have equal representation, and the
+                        main deliberative, policy-making and representative
+                        organ of the UN. Its powers are to oversee the budget of
+                        the UN, appoint the non-permanent members to the
+                        Security Council, appoint the Secretary-General of the
+                        United Nations, receive reports from other parts of the
+                        UN and make recommendations in the form of General
+                        Assembly Resolutions It has also established numerous
+                        subsidiary organs
                       </div>
                       <div className="item">
                         <div>
@@ -225,17 +224,17 @@ class Committee extends React.PureComponent {
                     </h1>
                     <div className="ui large bulleted animated list">
                       <div className="item" style={{ textAlign: 'justify' }}>
-                        <strong>About: </strong>
-                        is one of the six principal organs of the United Nations
-                        (UN) charged with the maintenance of international peace
-                        and security as well as accepting new members to the
-                        United Nations and approving any changes to its United
-                        Nations Charter Its powers include the establishment of
-                        peacekeeping operations, the establishment of
-                        international sanctions, and the authorization of
-                        military action through Security Council resolutions; it
-                        is the only UN body with the authority to issue binding
-                        resolutions to member states.
+                        <strong>About: </strong>is one of the six principal
+                        organs of the United Nations (UN) charged with the
+                        maintenance of international peace and security as well
+                        as accepting new members to the United Nations and
+                        approving any changes to its United Nations Charter Its
+                        powers include the establishment of peacekeeping
+                        operations, the establishment of international
+                        sanctions, and the authorization of military action
+                        through Security Council resolutions; it is the only UN
+                        body with the authority to issue binding resolutions to
+                        member states.
                       </div>
                       <div className="item">
                         <div>

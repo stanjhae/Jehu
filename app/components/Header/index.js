@@ -1,12 +1,13 @@
 import React from 'react';
 // import { FormattedMessage } from 'react-intl';
 
-import { Dropdown, Menu, Button } from 'semantic-ui-react';
+import { Dropdown, Menu, Icon, Button } from 'semantic-ui-react';
 import Flip from 'react-reveal/Flip';
 import HeaderLink from './HeaderLink';
 import Logo from './logo.png';
 // import messages from './messages';
-import './index.css';
+import delegate from './Delegates-kit.pdf';
+
 /* eslint-disable react/prefer-stateless-function */
 class Header extends React.Component {
   state = { width: window.innerWidth, visible: false };
@@ -41,14 +42,18 @@ class Header extends React.Component {
     const { visible, width } = this.state;
     return (
       <div>
-        <Menu className="header" stackable>
+        <Menu inverted stackable>
           <Menu.Menu position="left">
-            <Menu.Item icon header className="headerImage logoLink">
-              {/*<HeaderLink to="/" onClick={this.closeMenu}>*/}
-                {/*<img alt="logo" src={Logo} />*/}
-              {/*</HeaderLink>*/}
+            <Menu.Item icon header className="headerImage">
               <HeaderLink to="/" onClick={this.closeMenu}>
-                <h1>JEHU</h1>
+                <Flip top duration={1000} delay={2000}>
+                  <img alt="logo" src={Logo} />
+                </Flip>
+              </HeaderLink>
+              <HeaderLink to="/" onClick={this.closeMenu}>
+                <Flip top duration={1000} delay={2000}>
+                  <p>DebMUN</p>
+                </Flip>
               </HeaderLink>
               {width < 768 && (
                 <div style={{ position: 'absolute', right: 0 }}>
@@ -64,93 +69,183 @@ class Header extends React.Component {
           </Menu.Menu>
           {visible && (
             <Menu.Menu position="right">
-              <Menu.Item className="aboutLink">
+              <Menu.Item>
+                <Flip top duration={1000} delay={500}>
+                  <Icon name="book" color="orange" size="large" />
+                </Flip>
                 <Dropdown text="About" pointing className="link item">
                   <Dropdown.Menu>
                     <Dropdown.Item
                       as={HeaderLink}
-                      to="/about/who"
+                      to="/about/mun"
                       onClick={this.closeMenu}
                     >
-                      Who are we?
+                      <Icon name="book" color="orange" size="large" />
+                      What is MUN?
                     </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </Menu.Item>
-              <Menu.Item className="serviceLink">
-                <Dropdown text="Our Services" pointing className="link item">
-                  <Dropdown.Menu>
+                    <Dropdown.Divider />
                     <Dropdown.Item
                       as={HeaderLink}
-                      to="/process"
+                      to="/about/debmun"
                       onClick={this.closeMenu}
                     >
-                      JEHU process
+                      <Icon name="book" color="yellow" size="large" />
+                      What is DEBMUN?
                     </Dropdown.Item>
+                    <Dropdown.Divider />
                     <Dropdown.Item
                       as={HeaderLink}
-                      to="/startups"
+                      to="/about/team"
                       onClick={this.closeMenu}
                     >
-                      Start Ups
+                      <Icon name="users" color="olive" size="large" />
+                      Meet the Team
                     </Dropdown.Item>
-                    <Dropdown.Item
-                      as={HeaderLink}
-                      to="/businessConsulting"
-                      onClick={this.closeMenu}
-                    >
-                      Business Consulting
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                      as={HeaderLink}
-                      to="/translation"
-                      onClick={this.closeMenu}
-                    >
-                      Translation
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                      as={HeaderLink}
-                      to="/itDev"
-                      onClick={this.closeMenu}
-                    >
-                      IT Development
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                      as={HeaderLink}
-                      to="/itCons"
-                      onClick={this.closeMenu}
-                    >
-                      IT Consulting
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                      as={HeaderLink}
-                      to="/engineering"
-                      onClick={this.closeMenu}
-                    >
-                      Engineering
-                    </Dropdown.Item>
+                    {/* <Dropdown.Divider /> */}
+                    {/* <Dropdown.Item as={HeaderLink} to={'/about/unideb'} onClick={this.closeMenu}> */}
+                    {/* <Icon name='university' color={'green'} size={'large'}/> */}
+                    {/* The University of Debrecen */}
+                    {/* </Dropdown.Item> */}
+                    {/* <Dropdown.Divider /> */}
+                    {/* <Dropdown.Item as={HeaderLink} to={'/about/debrecen'} onClick={this.closeMenu}> */}
+                    {/* <Icon name='map' color={'teal'} size={'large'}/> */}
+                    {/* Debrecen */}
+                    {/* </Dropdown.Item> */}
                   </Dropdown.Menu>
                 </Dropdown>
               </Menu.Item>
               <Menu.Item
                 as={HeaderLink}
-                to="/gallery"
+                to="/committee"
                 onClick={this.closeMenu}
-                className="galleryLink"
               >
-                Gallery
+                <Flip top duration={1000} delay={1000}>
+                  <Icon name="file" color="yellow" size="large" />
+                  Committees
+                </Flip>
               </Menu.Item>
-              {/*<Menu.Item*/}
-                {/*as={HeaderLink}*/}
-                {/*to="/contact"*/}
-                {/*onClick={this.closeMenu}*/}
-                {/*className="contactLink"*/}
-              {/*>*/}
-                {/*Contact*/}
-              {/*</Menu.Item>*/}
+              <Menu.Item>
+                <Flip top duration={1000} delay={1500}>
+                  <Icon name="users" color="green" size="large" />
+                </Flip>
+                <Dropdown
+                  text="Partners & Sponsors"
+                  pointing
+                  className="link item"
+                >
+                  <Dropdown.Menu>
+                    <Dropdown.Item
+                      as={HeaderLink}
+                      to="/partners"
+                      onClick={this.closeMenu}
+                    >
+                      <Icon name="handshake" color="red" size="large" />
+                      Partners
+                    </Dropdown.Item>
+                    <Dropdown.Divider />
+                    <Dropdown.Item
+                      as={HeaderLink}
+                      to="/sponsors"
+                      onClick={this.closeMenu}
+                    >
+                      <Icon
+                        name="money bill alternate"
+                        color="green"
+                        size="large"
+                      />
+                      Sponsors
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Menu.Item>
+              <Menu.Item>
+                <Flip top duration={1000} delay={2000}>
+                  <Icon name="map signs" color="teal" size="large" />
+                </Flip>
+                <Dropdown text="Guides" className="link item">
+                  <Dropdown.Menu>
+                    <Dropdown.Item
+                      as={HeaderLink}
+                      to="/transport"
+                      onClick={this.closeMenu}
+                    >
+                      <Icon name="car" color="blue" size="large" />
+                      Getting Around in Debrecen
+                    </Dropdown.Item>
+                    <Dropdown.Divider />
+                    {/* <Dropdown.Item */}
+                    {/* as={HeaderLink} */}
+                    {/* to="/accommodation" */}
+                    {/* onClick={this.closeMenu} */}
+                    {/* > */}
+                    {/* <Icon name="home" color="red" size="large" /> */}
+                    {/* Accommodation */}
+                    {/* </Dropdown.Item> */}
+                    {/* <Dropdown.Divider /> */}
+                    <Dropdown.Item onClick={this.closeMenu}>
+                      <a
+                        href={delegate}
+                        target="_blank"
+                        style={{ color: '#000' }}
+                      >
+                        <Icon name="briefcase" color="red" size="large" />
+                        Download Delegate Kit
+                      </a>
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Menu.Item>
+              <Menu.Item>
+                <Flip top duration={1000} delay={2500}>
+                  <Icon name="paper plane" color="blue" size="large" />
+                </Flip>
+                <Dropdown text="Apply Now" pointing className="link item">
+                  <Dropdown.Menu>
+                    <Dropdown.Item
+                      as={HeaderLink}
+                      to="/chairs"
+                      onClick={this.closeMenu}
+                    >
+                      <Icon name="wordpress forms" color="red" size="large" />
+                      Chairs Application
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      as={HeaderLink}
+                      to="/delegates"
+                      onClick={this.closeMenu}
+                    >
+                      <Icon name="wpforms" color="red" size="large" />
+                      Delegate Application
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      as={HeaderLink}
+                      to="/faq"
+                      onClick={this.closeMenu}
+                    >
+                      <Icon name="book" color="red" size="large" />
+                      FAQs
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Menu.Item>
+              <Menu.Item as={HeaderLink} to="/contact" onClick={this.closeMenu}>
+                <Flip top duration={1000} delay={3000}>
+                  <Icon name="phone" color="purple" size="large" />
+                  Contact
+                </Flip>
+              </Menu.Item>
             </Menu.Menu>
           )}
         </Menu>
+
+        {/* <NavBar> */}
+        {/* <HeaderHeaderLink to="/"> */}
+        {/* <FormattedMessage {...messages.home} /> */}
+        {/* </HeaderHeaderLink> */}
+        {/* <HeaderHeaderLink to="/features"> */}
+        {/* <FormattedMessage {...messages.features} /> */}
+        {/* </HeaderHeaderLink> */}
+        {/* </NavBar> */}
       </div>
     );
   }

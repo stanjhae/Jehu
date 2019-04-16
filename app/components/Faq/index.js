@@ -159,7 +159,7 @@ class Faq extends React.PureComponent {
               <p>
                 You do not need previous experience to participate. However,
                 experienced participants will be prioritized and will be
-                allocated, accordingly. When deciding on your committee
+                allocated, accordingly. When deciding on your committee
                 preferences, please bear in mind that; -only experienced
                 delegates will be allocated to the United Nations Security
                 Council, International court of justice..etc
