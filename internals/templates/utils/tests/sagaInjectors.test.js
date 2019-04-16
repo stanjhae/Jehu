@@ -110,7 +110,7 @@ describe('injectors', () => {
       process.env.NODE_ENV = originalNodeEnv;
     });
 
-    it("should not remove daemon saga's descriptor in development", () => {
+    it("should not remove daemon saga's descriptor in ITDEV", () => {
       injectSaga('test', { saga: testSaga, mode: DAEMON });
       ejectSaga('test');
 

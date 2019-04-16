@@ -12,7 +12,7 @@ export default styled(Link)`
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
-  color: #41addd;
+  color: #000;
 
   &:active {
     background: #41addd;

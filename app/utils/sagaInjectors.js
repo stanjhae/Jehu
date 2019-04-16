@@ -71,7 +71,7 @@ export function ejectSagaFactory(store, isValid) {
       const descriptor = store.injectedSagas[key];
       if (descriptor.mode && descriptor.mode !== DAEMON) {
         descriptor.task.cancel();
-        // Clean up in production; in development we need `descriptor.saga` for hot reloading
+        // Clean up in production; in ITDEV we need `descriptor.saga` for hot reloading
         if (process.env.NODE_ENV === 'production') {
           // Need some value to be able to detect `ONCE_TILL_UNMOUNT` sagas in `injectSaga`
           store.injectedSagas[key] = 'done'; // eslint-disable-line no-param-reassign

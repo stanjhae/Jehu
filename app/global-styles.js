@@ -152,8 +152,7 @@ const GlobalStyle = createGlobalStyle`
     color: #fff !important;
 }
 .item{
-    /*color: #fff !important;*/
-    /*text-transform: uppercase;*/
+    color: #fff !important;
 }
 .contact{
     /*background-color:#1A1C1D;*/
