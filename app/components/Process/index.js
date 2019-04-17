@@ -12,11 +12,16 @@ import React from 'react';
 // import messages from './messages';
 import Header from 'components/Header';
 import './index.css';
+import { Helmet } from 'react-helmet';
 /* eslint-disable react/prefer-stateless-function */
-class Partners extends React.PureComponent {
+class Process extends React.PureComponent {
   render() {
     return (
       <div className="App">
+        <Helmet>
+          <title>Process</title>
+          <meta name="description" content="Process" />
+        </Helmet>
         <div className="ui center aligned grid process process1">
           <div className="row">
             <div className="left floated column">
@@ -48,28 +53,43 @@ class Partners extends React.PureComponent {
             <div className="center aligned column processSteps second">
               <h1>3. INITIAL CONSULTATION</h1>
               <p>
-                On the meeting you can share with us your ideas where you gave us directions to the budget and the exact details of the project itself. .
+                On the meeting you can share with us your ideas where you gave
+                us directions to the budget and the exact details of the project
+                itself. .
               </p>
             </div>
             <div className="center aligned column processSteps">
               <h1>4. OBJECTIVE OF THE MISSION</h1>
-              <p>We sit together and plan the project based on your needs and expectations, this includes an estimate that sets out clearly the objective of the mission, the context and the methodology implemented, there is also the calendar and the estimation of the budget.</p>
+              <p>
+                We sit together and plan the project based on your needs and
+                expectations, this includes an estimate that sets out clearly
+                the objective of the mission, the context and the methodology
+                implemented, there is also the calendar and the estimation of
+                the budget.
+              </p>
             </div>
           </div>
           <div className="row zeroPadding">
             <div className="center aligned column processSteps">
               <h1>5. IMPLEMENTATION</h1>
               <p>
-                We implement the project based on the agreed upon approach, this stage includes data collection and planning preformed by most skilled Debrecen University students, progress reports will be sent to the clients through the way.
+                We implement the project based on the agreed upon approach, this
+                stage includes data collection and planning preformed by most
+                skilled Debrecen University students, progress reports will be
+                sent to the clients through the way.
               </p>
             </div>
             <div className="center aligned column processSteps second">
               <h1>6. FINALIZATION</h1>
-              <p>The results will be shared in the suitable form most likely in a form of presentation, the process finish with filling feedback reports in order to keep improving.</p>
+              <p>
+                The results will be shared in the suitable form most likely in a
+                form of presentation, the process finish with filling feedback
+                reports in order to keep improving.
+              </p>
             </div>
           </div>
         </div>
-        <div className="ui middle aligned center aligned grid process process3">
+        <div className="ui middle aligned center aligned grid process process1">
           <div className="row">
             <div className="column statistics">
               <h1>JEHU</h1>
@@ -82,6 +102,6 @@ class Partners extends React.PureComponent {
   }
 }
 
-Partners.propTypes = {};
+Process.propTypes = {};
 
-export default Partners;
+export default Process;

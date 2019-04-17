@@ -12,19 +12,24 @@ import React from 'react';
 // import messages from './messages';
 import Header from 'components/Header';
 import './index.css';
+import { Helmet } from 'react-helmet';
 /* eslint-disable react/prefer-stateless-function */
-class Partners extends React.PureComponent {
+class Translation extends React.PureComponent {
   render() {
     return (
       <div className="App">
-        <div className="ui center aligned grid process process1">
+        <Helmet>
+          <title>Translation</title>
+          <meta name="description" content="Translation" />
+        </Helmet>
+        <div className="ui center aligned grid translation translation1">
           <div className="row">
             <div className="left floated column">
               <Header />
             </div>
           </div>
           <div className="row">
-            <div className="column processText">
+            <div className="column translationText">
               <h1>TRANSLATION</h1>
             </div>
           </div>
@@ -39,12 +44,10 @@ class Partners extends React.PureComponent {
               <p>Application strings</p>
               <p>Surveys</p>
             </div>
-            <div className="center aligned column startups startup1">
-            </div>
+            <div className="center aligned column translation translation2" />
           </div>
           <div className="row zeroPadding">
-            <div className="center aligned column startups startup2">
-            </div>
+            <div className="center aligned column translation translation3" />
             <div className="center aligned column translation">
               <h1>Technology and software</h1>
               <p>Documentation</p>
@@ -61,12 +64,10 @@ class Partners extends React.PureComponent {
               <p>Static website copy</p>
               <p>Branding materials</p>
             </div>
-            <div className="center aligned column startups startup3">
-            </div>
+            <div className="center aligned column translation translation4" />
           </div>
           <div className="row zeroPadding">
-            <div className="center aligned column startups startup3">
-            </div>
+            <div className="center aligned column translation translation5" />
             <div className="center aligned column translation">
               <h1>Marketing and advertising</h1>
               <p>Newsletters</p>
@@ -78,9 +79,9 @@ class Partners extends React.PureComponent {
             </div>
           </div>
         </div>
-        <div className="ui middle aligned center aligned grid process process3">
+        <div className="ui middle aligned center aligned grid translation translationHeader translation1">
           <div className="row">
-            <div className="column statistics">
+            <div className="column translationText">
               <h1>JEHU</h1>
               <p>FIRST JUNIOR ENTERPRISE IN HUNGARY</p>
             </div>
@@ -91,6 +92,6 @@ class Partners extends React.PureComponent {
   }
 }
 
-Partners.propTypes = {};
+Translation.propTypes = {};
 
-export default Partners;
+export default Translation;

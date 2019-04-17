@@ -1,7 +1,7 @@
 /* eslint-disable no-restricted-syntax */
 /**
  * This script will extract the internationalization messages from all components
- * and package them in the translation json files in the translations file.
+ * and package them in the Translation json files in the translations file.
  */
 
 require('shelljs/global');
@@ -71,10 +71,10 @@ const localeMappings = [];
 for (const locale of appLocales) {
   oldLocaleMappings[locale] = {};
   localeMappings[locale] = {};
-  // File to store translation messages into
+  // File to store Translation messages into
   const translationFileName = `app/translations/${locale}.json`;
   try {
-    // Parse the old translation message JSON files
+    // Parse the old Translation message JSON files
     const messages = JSON.parse(fs.readFileSync(translationFileName));
     const messageKeys = Object.keys(messages);
     for (const messageKey of messageKeys) {
@@ -136,8 +136,8 @@ memoryTask.then(files => {
         `Writing translation messages for ${locale} to: ${translationFileName}`,
       );
 
-      // Sort the translation JSON file so that git diffing is easier
-      // Otherwise the translation messages will jump around every time we extract
+      // Sort the Translation JSON file so that git diffing is easier
+      // Otherwise the Translation messages will jump around every time we extract
       const messages = {};
       Object.keys(localeMappings[locale])
         .sort()
@@ -145,7 +145,7 @@ memoryTask.then(files => {
           messages[key] = localeMappings[locale][key];
         });
 
-      // Write to file the JSON representation of the translation messages
+      // Write to file the JSON representation of the Translation messages
       const prettified = `${JSON.stringify(messages, null, 2)}\n`;
 
       try {

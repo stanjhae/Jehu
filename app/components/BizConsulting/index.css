@@ -1,47 +1,36 @@
+.bizConsulting{
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+}
+.bizConsultingHeader{
+  background-attachment: fixed;
+}
 .bizConsulting p{
   font-size: 1.5rem;
 }
-.process{
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 60vh;
-}
-.processText{
+.bizConsultingText{
   color:#fff;
   font-size: 3rem;
-  /*background-color: rgba(0,0,0,0.3);*/
-}
-.statNum{
-  color:#fff;
-  font-size: 3rem;
-}
-.statistics{
-  color:#fff;
-  padding-top: 10px;
-  font-size: 1.5rem;
 }
 .bizConsulting1{
+  background-image: url('../Home/home5.jpg');
+}
+.bizConsulting2{
   background-image: url('./startup1.jpg');
 }
-.startup2{
+.bizConsulting3{
   background-image: url('./startup2.jpg');
 }
-.startup3{
+.bizConsulting4{
   background-image: url('./startup3.jpg');
 }
-.startups{
-  height: 50vh;
-  background-position: center;
-  background-size: cover;
-}
-.second{
-  background-color: firebrick;
-  color: #fff;
+.bizConsulting5{
+  background-image: url('../Home/home2.jpg');
 }
 .zeroMargin{
-  margin: 0px !important;
+  margin: 0 !important;
 }
 .zeroPadding{
-  padding: 0px !important;
+  padding: 0 !important;
 }

@@ -11,7 +11,6 @@ import React from 'react';
 // import { FormattedMessage } from 'react-intl';
 // import messages from './messages';
 import { Accordion, Icon } from 'semantic-ui-react';
-import background from '../Committee/background.jpg';
 
 /* eslint-disable react/prefer-stateless-function */
 class Faq extends React.PureComponent {
@@ -159,7 +158,7 @@ class Faq extends React.PureComponent {
               <p>
                 You do not need previous experience to participate. However,
                 experienced participants will be prioritized and will be
-                allocated, accordingly. When deciding on your committee
+                allocated, accordingly. When deciding on your committee
                 preferences, please bear in mind that; -only experienced
                 delegates will be allocated to the United Nations Security
                 Council, International court of justice..etc

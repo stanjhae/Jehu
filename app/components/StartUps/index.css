@@ -1,11 +1,16 @@
-.headerImg{
+.startup{
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
-  height: 60vh;
-  background-image: url('../Home/home5.jpg');
+  height: 50vh;
 }
-.processText{
+.startupHeader{
+  background-attachment: fixed;
+}
+.startup p{
+  font-size: 1.5rem;
+  padding: 120px;
+}
+.startUpText{
   color:#fff;
   font-size: 3rem;
   /*background-color: rgba(0,0,0,0.3);*/
@@ -20,22 +25,19 @@
   font-size: 1.5rem;
 }
 .startup1{
-  background-image: url('./startup1.jpg');
+  background-image: url('../Home/home5.jpg');
 }
 .startup2{
-  background-image: url('./startup2.jpg');
+  background-image: url('./startup1.jpg');
 }
 .startup3{
+  background-image: url('./startup2.jpg');
+}
+.startup4{
   background-image: url('./startup3.jpg');
 }
-.startups{
-  height: 50vh;
-  background-position: center;
-  background-size: cover;
-}
-.startups p{
-  font-size: 1.5rem;
-  padding: 120px;
+.startup5{
+  background-image: url('../Home/home2.jpg');
 }
 .second{
   background-color: firebrick;

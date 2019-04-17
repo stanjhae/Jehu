@@ -13,6 +13,7 @@ import Header from 'components/Header';
 // import { FormattedMessage } from 'react-intl';
 // import messages from './messages';
 import './index.css';
+import { Helmet } from 'react-helmet';
 import dkvBus from './dkvbus.jpg';
 import dkvBus2 from './dkvbuss.jpg';
 import dkvTram from './dkvtram.jpg';
@@ -42,6 +43,10 @@ class Gallery extends React.PureComponent {
   render() {
     return (
       <div className="App">
+        <Helmet>
+          <title>Gallery</title>
+          <meta name="description" content="Gallery" />
+        </Helmet>
         <div className="ui center aligned grid process process1">
           <div className="row">
             <div className="left floated column">
@@ -54,24 +59,24 @@ class Gallery extends React.PureComponent {
             </div>
           </div>
         </div>
-        {/*<div className="ui middle aligned two column centered grid">*/}
-          {/*<div className="row">*/}
-            {/*<MagicGrid static animate gutter={5} items={30}>*/}
-              {/*{this.images.map(image => (*/}
-                {/*<div className="column">*/}
-                  {/*<div className="image-hover img-shadow-1">*/}
-                    {/*<img*/}
-                      {/*key={image.id}*/}
-                      {/*src={image.image}*/}
-                      {/*alt="animal"*/}
-                      {/*width={300}*/}
-                    {/*/>*/}
-                  {/*</div>*/}
-                {/*</div>*/}
-              {/*))}*/}
-            {/*</MagicGrid>*/}
-          {/*</div>*/}
-        {/*</div>*/}
+        {/* <div className="ui middle aligned two column centered grid"> */}
+        {/* <div className="row"> */}
+        {/* <MagicGrid static animate gutter={5} items={30}> */}
+        {/* {this.images.map(image => ( */}
+        {/* <div className="column"> */}
+        {/* <div className="image-hover img-shadow-1"> */}
+        {/* <img */}
+        {/* key={image.id} */}
+        {/* src={image.image} */}
+        {/* alt="animal" */}
+        {/* width={300} */}
+        {/* /> */}
+        {/* </div> */}
+        {/* </div> */}
+        {/* ))} */}
+        {/* </MagicGrid> */}
+        {/* </div> */}
+        {/* </div> */}
       </div>
     );
   }

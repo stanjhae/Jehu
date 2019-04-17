@@ -12,19 +12,24 @@ import React from 'react';
 // import messages from './messages';
 import Header from 'components/Header';
 import './index.css';
+import { Helmet } from 'react-helmet';
 /* eslint-disable react/prefer-stateless-function */
 class Partners extends React.PureComponent {
   render() {
     return (
       <div className="App">
-        <div className="ui center aligned grid process process1">
+        <Helmet>
+          <title>IT Consulting</title>
+          <meta name="description" content="IT Consulting" />
+        </Helmet>
+        <div className="ui center aligned grid itCons itCons1">
           <div className="row">
             <div className="left floated column">
               <Header />
             </div>
           </div>
           <div className="row">
-            <div className="column processText">
+            <div className="column itConsText">
               <h1>IT CONSULTING</h1>
             </div>
           </div>
@@ -46,9 +51,9 @@ class Partners extends React.PureComponent {
             </div>
           </div>
         </div>
-        <div className="ui middle aligned center aligned grid process process3">
+        <div className="ui middle aligned center aligned grid itCons itCons1">
           <div className="row">
-            <div className="column statistics">
+            <div className="column itConsText">
               <h1>JEHU</h1>
               <p>FIRST JUNIOR ENTERPRISE IN HUNGARY</p>
             </div>

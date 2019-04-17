@@ -16,7 +16,7 @@ import { Helmet } from 'react-helmet';
 // import messages from './messages';
 
 /* eslint-disable react/prefer-stateless-function */
-class AboutMun extends React.PureComponent {
+class WhoAreWe extends React.PureComponent {
   render() {
     return (
       <div className="App">
@@ -31,12 +31,12 @@ class AboutMun extends React.PureComponent {
             </div>
           </div>
           <div className="row">
-            <div className="column aboutText">
+            <div className="column whoText">
               <h1>WHO ARE WE</h1>
             </div>
           </div>
         </div>
-        <div className="ui middle aligned center aligned grid secLetter">
+        <div className="ui middle aligned center aligned grid whoColumnText">
           <div className="row">
             <div className="column">
               <h1>WHAT IS A JUNIOR ENTERPRISE?</h1>
@@ -53,10 +53,17 @@ class AboutMun extends React.PureComponent {
             </div>
           </div>
         </div>
-        <div className="ui five columns doubling stackable middle aligned center aligned grid about about2">
+        <div className="ui five columns doubling stackable middle aligned center aligned grid who who2">
           <div className="row">
             <div className="column statNum">
-              <CountUp start={0} end={900} delay={0} duration={3} redraw useEasing={false}>
+              <CountUp
+                start={0}
+                end={900}
+                delay={0}
+                duration={3}
+                redraw
+                useEasing={false}
+              >
                 {({ countUpRef }) => (
                   <div>
                     <span ref={countUpRef} />
@@ -66,7 +73,14 @@ class AboutMun extends React.PureComponent {
               <p className="statistics">JUNIOR ENTERPRISE</p>
             </div>
             <div className="column statNum">
-              <CountUp start={0} end={35000} delay={0} duration={3} redraw useEasing={false}>
+              <CountUp
+                start={0}
+                end={35000}
+                delay={0}
+                duration={3}
+                redraw
+                useEasing={false}
+              >
                 {({ countUpRef }) => (
                   <div>
                     <span ref={countUpRef} />
@@ -76,7 +90,14 @@ class AboutMun extends React.PureComponent {
               <p className="statistics">UNIVERSITY STUDENTS</p>
             </div>
             <div className="column statNum">
-              <CountUp start={0} end={30} delay={0} duration={3} redraw useEasing={false}>
+              <CountUp
+                start={0}
+                end={30}
+                delay={0}
+                duration={3}
+                redraw
+                useEasing={false}
+              >
                 {({ countUpRef }) => (
                   <div>
                     <span ref={countUpRef} />
@@ -86,7 +107,14 @@ class AboutMun extends React.PureComponent {
               <p className="statistics">COUNTRIES</p>
             </div>
             <div className="column statNum">
-              <CountUp start={0} end={8500} delay={0} duration={3} redraw useEasing={false}>
+              <CountUp
+                start={0}
+                end={8500}
+                delay={0}
+                duration={3}
+                redraw
+                useEasing={false}
+              >
                 {({ countUpRef }) => (
                   <div>
                     <span ref={countUpRef} />
@@ -96,7 +124,14 @@ class AboutMun extends React.PureComponent {
               <p className="statistics">PROJECTS FOR CLIENTS/YEAR</p>
             </div>
             <div className="column statNum">
-              <CountUp start={0} end={16} delay={0} duration={3} redraw useEasing={false}>
+              <CountUp
+                start={0}
+                end={16}
+                delay={0}
+                duration={3}
+                redraw
+                useEasing={false}
+              >
                 {({ countUpRef }) => (
                   <div>
                     <span ref={countUpRef} />
@@ -107,7 +142,7 @@ class AboutMun extends React.PureComponent {
             </div>
           </div>
         </div>
-        <div className="ui middle aligned center aligned grid container secLetter">
+        <div className="ui middle aligned center aligned grid container whoColumnText">
           <div className="row">
             <div className="column">
               <h1>50 YEARS OF HISTORY</h1>
@@ -122,9 +157,9 @@ class AboutMun extends React.PureComponent {
             </div>
           </div>
         </div>
-        <div className="ui middle aligned center aligned grid about about3">
+        <div className="ui middle aligned center aligned grid who who1">
           <div className="row">
-            <div className="column statistics">
+            <div className="column whoText">
               <h1>JEHU</h1>
               <p>FIRST JUNIOR ENTERPRISE IN HUNGARY</p>
             </div>
@@ -135,6 +170,6 @@ class AboutMun extends React.PureComponent {
   }
 }
 
-AboutMun.propTypes = {};
+WhoAreWe.propTypes = {};
 
-export default AboutMun;
+export default WhoAreWe;

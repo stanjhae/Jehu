@@ -10,7 +10,7 @@ const CircularDependencyPlugin = require('circular-dependency-plugin');
 module.exports = require('./webpack.base.babel')({
   mode: 'development',
 
-  // Add hot reloading in development
+  // Add hot reloading in ITDEV
   entry: [
     require.resolve('react-app-polyfill/ie11'),
     'webpack-hot-middleware/client?reload=true',
@@ -29,7 +29,7 @@ module.exports = require('./webpack.base.babel')({
     },
   },
 
-  // Add development plugins
+  // Add ITDEV plugins
   plugins: [
     new webpack.HotModuleReplacementPlugin(), // Tell webpack we want hot reloading
     new HtmlWebpackPlugin({

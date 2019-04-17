@@ -4,7 +4,7 @@
   background-attachment: fixed;
   height: 60vh;
 }
-.aboutText{
+.whoText{
   color:#fff;
   font-size: 3rem;
 }
@@ -17,12 +17,15 @@
   padding-top: 10px;
   font-size: 1.5rem;
 }
+.whoColumnText{
+  min-height: 70vh;
+}
 .who1{
   background-image: url('../Home/home5.jpg');
 }
-.about2{
+.who2{
   background-image: url('./counter.jpg');
 }
-.about3{
+.who3{
   background-image: url('../Home/home2.jpg');
 }
