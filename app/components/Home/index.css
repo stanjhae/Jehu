@@ -1,20 +1,52 @@
+.home{
+  color: #fff;
+}
 .homePic{
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
+  height: 60vh;
+}
+.homeHeader{
   height: 105vh;
 }
-.homeText{
-  color:#fff;
-  font-size: 3rem;
-  /*background-color: rgba(0,0,0,0.3);*/
+.headerRow{
+  height: 0;
+}
+/*.headerColumn{*/
+  /*margin-top: -100px !important;*/
+/*}*/
+.offer{
+  min-height: 40vh;
+}
+.offer p{
+  font-family: 'Exo 2', sans-serif;
+  font-size: 25px;
+}
+.stats {
+  font-family: 'Exo 2', sans-serif;
+  height: 40vh;
+  font-size: 30px;
+}
+.stats p{
+  font-family: 'Exo 2', sans-serif;
 }
 .pic1{
-  background-image: url('./home5.jpg');
+  background-image: url('./home7.jpg');
 }
 .pic2{
-  background-image: url('./home1.jpg');
+  background-image: url('./services.jpg');
+  background-position: center;
+  background-size: cover;
 }
 .pic3{
-  background-image: url('./home2.jpg');
+  background-image: url('./counter.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.map{
+  height: 50vh;
+}
+.map .row{
+  padding: 0 !important;
 }

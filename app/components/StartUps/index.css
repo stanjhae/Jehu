@@ -1,14 +1,10 @@
-.startup{
+.startUpPlain .column{
+  height: 50vh;
   background-position: center;
   background-size: cover;
-  height: 50vh;
 }
-.startupHeader{
-  background-attachment: fixed;
-}
-.startup p{
-  font-size: 1.5rem;
-  padding: 120px;
+.startUpPlain .column p{
+  padding: 20% 0;
 }
 .startUpText{
   color:#fff;
@@ -25,7 +21,10 @@
   font-size: 1.5rem;
 }
 .startup1{
-  background-image: url('../Home/home5.jpg');
+  background-image: url('./startup4.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
 }
 .startup2{
   background-image: url('./startup1.jpg');

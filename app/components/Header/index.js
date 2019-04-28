@@ -4,7 +4,6 @@ import React from 'react';
 import { Dropdown, Menu, Button } from 'semantic-ui-react';
 import Flip from 'react-reveal/Flip';
 import HeaderLink from './HeaderLink';
-import Logo from './logo.png';
 // import messages from './messages';
 import './index.css';
 /* eslint-disable react/prefer-stateless-function */
@@ -34,7 +33,7 @@ class Header extends React.Component {
   };
 
   closeMenu = () => {
-    if (this.state.width < 768) this.setState({ visible: false });
+    if (this.state.width < 770) this.setState({ visible: false });
   };
 
   render() {
@@ -48,9 +47,9 @@ class Header extends React.Component {
               {/* <img alt="logo" src={Logo} /> */}
               {/* </HeaderLink> */}
               <HeaderLink to="/" onClick={this.closeMenu}>
-                <h1>JEHU</h1>
+                <h3>JEHU</h3>
               </HeaderLink>
-              {width < 768 && (
+              {width < 770 && (
                 <div style={{ position: 'absolute', right: 0 }}>
                   <Flip top duration={1000} delay={2000}>
                     {!visible && (
@@ -98,47 +97,52 @@ class Header extends React.Component {
                       as={HeaderLink}
                       to="/businessConsulting"
                       onClick={this.closeMenu}
+                      disabled
                     >
-                      Business Consulting
+                      Business Consulting (Coming soon)
                     </Dropdown.Item>
                     <Dropdown.Item
                       as={HeaderLink}
                       to="/translation"
                       onClick={this.closeMenu}
+                      disabled
                     >
-                      Translation
+                      Translation (Coming soon)
                     </Dropdown.Item>
                     <Dropdown.Item
                       as={HeaderLink}
                       to="/itDev"
                       onClick={this.closeMenu}
+                      disabled
                     >
-                      IT Development
+                      IT Development (Coming soon)
                     </Dropdown.Item>
                     <Dropdown.Item
                       as={HeaderLink}
                       to="/itCons"
                       onClick={this.closeMenu}
+                      disabled
                     >
-                      IT Consulting
+                      IT Consulting (Coming soon)
                     </Dropdown.Item>
                     <Dropdown.Item
                       as={HeaderLink}
                       to="/engineering"
                       onClick={this.closeMenu}
+                      disabled
                     >
-                      Engineering
+                      Engineering (Coming soon)
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </Menu.Item>
               <Menu.Item
                 as={HeaderLink}
-                to="/gallery"
+                to="/contact"
                 onClick={this.closeMenu}
                 className="galleryLink"
               >
-                Gallery
+                Contact
               </Menu.Item>
               {/* <Menu.Item */}
               {/* as={HeaderLink} */}

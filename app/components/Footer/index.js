@@ -39,7 +39,7 @@ function Footer() {
           {/* </p> */}
           <p style={{ textAlign: 'center' }}>
             Design by{' '}
-            <a href="https://www.facebook.com/stanjhae" target="_blank">
+            <a href="https://stanjhae.firebaseapp.com" target="_blank">
               Stanjhae
             </a>
           </p>

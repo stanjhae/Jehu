@@ -5,6 +5,7 @@
  */
 
 import React from 'react';
+import { Fade, Bounce } from 'react-reveal';
 import Header from 'components/Header';
 import './index.css';
 import CountUp from 'react-countup';
@@ -31,31 +32,35 @@ class WhoAreWe extends React.PureComponent {
             </div>
           </div>
           <div className="row">
-            <div className="column whoText">
+            <Fade className="column" top duration={2000}>
               <h1>WHO ARE WE</h1>
-            </div>
+            </Fade>
           </div>
         </div>
-        <div className="ui middle aligned center aligned grid whoColumnText">
+        <div className="ui middle aligned center aligned grid plainBackground text container">
           <div className="row">
             <div className="column">
-              <h1>WHAT IS A JUNIOR ENTERPRISE?</h1>
-              <p>
-                A Junior Enterprise is a non-profit organization, formed and
-                managed exclusively by university students, which provides
-                services for companies, institutions, and individuals.
-              </p>
-              <p>
-                Junior Enterprises are similar to real companies, with the main
-                goal of enhancing the learning of their members through
-                practical experiences.
-              </p>
+              <Fade top duration={2000}>
+                <h2>WHAT IS A JUNIOR ENTERPRISE?</h2>
+              </Fade>
+              <Fade bottom cascade duration={2000}>
+                <p>
+                  A Junior Enterprise is a non-profit organization, formed and
+                  managed exclusively by university students, which provides
+                  services for companies, institutions, and individuals.
+                </p>
+                <p>
+                  Junior Enterprises are similar to real companies, with the
+                  main goal of enhancing the learning of their members through
+                  practical experiences.
+                </p>
+              </Fade>
             </div>
           </div>
         </div>
-        <div className="ui five columns doubling stackable middle aligned center aligned grid who who2">
-          <div className="row">
-            <div className="column statNum">
+        <div className="ui five columns doubling stackable middle aligned center aligned grid offer who2">
+          <Bounce duration={2000} bottom cascade className="row">
+            <div className="column">
               <CountUp
                 start={0}
                 end={900}
@@ -70,9 +75,9 @@ class WhoAreWe extends React.PureComponent {
                   </div>
                 )}
               </CountUp>
-              <p className="statistics">JUNIOR ENTERPRISE</p>
+              <p>JUNIOR ENTERPRISE</p>
             </div>
-            <div className="column statNum">
+            <div className="column">
               <CountUp
                 start={0}
                 end={35000}
@@ -87,9 +92,9 @@ class WhoAreWe extends React.PureComponent {
                   </div>
                 )}
               </CountUp>
-              <p className="statistics">UNIVERSITY STUDENTS</p>
+              <p>UNIVERSITY STUDENTS</p>
             </div>
-            <div className="column statNum">
+            <div className="column">
               <CountUp
                 start={0}
                 end={30}
@@ -104,9 +109,9 @@ class WhoAreWe extends React.PureComponent {
                   </div>
                 )}
               </CountUp>
-              <p className="statistics">COUNTRIES</p>
+              <p>COUNTRIES</p>
             </div>
-            <div className="column statNum">
+            <div className="column">
               <CountUp
                 start={0}
                 end={8500}
@@ -121,9 +126,9 @@ class WhoAreWe extends React.PureComponent {
                   </div>
                 )}
               </CountUp>
-              <p className="statistics">PROJECTS FOR CLIENTS/YEAR</p>
+              <p>PROJECTS FOR CLIENTS/YEAR</p>
             </div>
-            <div className="column statNum">
+            <div className="column">
               <CountUp
                 start={0}
                 end={16}
@@ -138,30 +143,26 @@ class WhoAreWe extends React.PureComponent {
                   </div>
                 )}
               </CountUp>
-              <p className="statistics">MILLION TURNOVER/YEAR (EUROS)</p>
+              <p>MILLION TURNOVER/YEAR (EUROS)</p>
             </div>
-          </div>
+          </Bounce>
         </div>
-        <div className="ui middle aligned center aligned grid container whoColumnText">
+        <div className="ui middle aligned center aligned grid container plainBackground text container">
           <div className="row">
             <div className="column">
-              <h1>50 YEARS OF HISTORY</h1>
-              <p>
-                The first Junior Enterprise was founded in ESSEC Business School
-                in Paris, France in 1967. During the next 20 years the concept
-                reached many other countries in Europe, then in 1988, it arrived
-                in Brazil and further to other American countries. Since 2006,
-                we have had a constant growth in the African and Asian
-                continents as well.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="ui middle aligned center aligned grid who who1">
-          <div className="row">
-            <div className="column whoText">
-              <h1>JEHU</h1>
-              <p>FIRST JUNIOR ENTERPRISE IN HUNGARY</p>
+              <Fade top duration={2000}>
+                <h2>50 YEARS OF HISTORY</h2>
+              </Fade>
+              <Fade bottom duration={2000}>
+                <p>
+                  The first Junior Enterprise was founded in ESSEC Business
+                  School in Paris, France in 1967. During the next 20 years the
+                  concept reached many other countries in Europe, then in 1988,
+                  it arrived in Brazil and further to other American countries.
+                  Since 2006, we have had a constant growth in the African and
+                  Asian continents as well.
+                </p>
+              </Fade>
             </div>
           </div>
         </div>

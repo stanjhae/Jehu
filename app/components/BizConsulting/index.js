@@ -22,23 +22,23 @@ class Partners extends React.PureComponent {
           <title>Business Consulting</title>
           <meta name="description" content="Business Consulting" />
         </Helmet>
-        <div className="ui center aligned grid bizConsulting bizConsultingHeader bizConsulting1">
+        <div className="ui center aligned grid bizConsultingHeader bizConsulting1">
           <div className="row">
             <div className="left floated column">
               <Header />
             </div>
           </div>
           <div className="row">
-            <div className="column bizConsultingText">
+            <div className="column">
               <h1>BUSINESS CONSULTING</h1>
             </div>
           </div>
         </div>
 
-        <div className="ui middle aligned two column centered grid">
+        <div className="ui doubling stackable middle aligned two column centered grid plainBackground bizConsultingPlain container">
           <div className="row zeroPadding">
-            <div className="center aligned column bizConsulting">
-              <h1>Finance</h1>
+            <div className="center aligned column">
+              <h2>Finance</h2>
               <p>Preparing a business plan</p>
               <p>Analysis of cost structures</p>
               <p>
@@ -46,12 +46,12 @@ class Partners extends React.PureComponent {
                 bizConsulting
               </p>
             </div>
-            <div className="center aligned column bizConsulting bizConsulting2" />
+            <div className="center aligned column bizConsulting2" />
           </div>
           <div className="row zeroPadding">
-            <div className="center aligned column bizConsulting bizConsulting3" />
-            <div className="center aligned column bizConsulting">
-              <h1>Marketing</h1>
+            <div className="center aligned column bizConsulting3" />
+            <div className="center aligned column">
+              <h2>Marketing</h2>
               <p>Promote them with communication plans</p>
               <p>Social Media Promotion</p>
               <p>Digitalization</p>
@@ -60,7 +60,7 @@ class Partners extends React.PureComponent {
           </div>
           <div className="row zeroPadding">
             <div className="center aligned column bizConsulting">
-              <h1>Strategy</h1>
+              <h2>Strategy</h2>
               <p>
                 Launching a new product or service on the market can be costly
                 and requires an in-depth study to perfectly identify your target
@@ -70,15 +70,7 @@ class Partners extends React.PureComponent {
               <p>Study of the field</p>
               <p>Definition of strategical positioning.</p>
             </div>
-            <div className="center aligned column bizConsulting bizConsulting4" />
-          </div>
-        </div>
-        <div className="ui middle aligned center aligned grid bizConsulting bizConsultingHeader bizConsulting1">
-          <div className="row">
-            <div className="column bizConsultingText">
-              <h1>JEHU</h1>
-              <p>FIRST JUNIOR ENTERPRISE IN HUNGARY</p>
-            </div>
+            <div className="center aligned column bizConsulting4" />
           </div>
         </div>
       </div>

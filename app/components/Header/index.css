@@ -4,6 +4,13 @@
   border: 0 none !important;
  -webkit-box-shadow: none !important;
   box-shadow: none !important;
+  min-height: 20px;
+  z-index: 100;
+}
+@media screen and (max-width: 770px) {
+  .logoLink{
+    height: 50px;
+  }
 }
 .logoLink{
   background-color: dodgerblue !important;

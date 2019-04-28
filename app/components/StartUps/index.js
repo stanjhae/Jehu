@@ -5,6 +5,7 @@
  */
 
 import React from 'react';
+import { Fade } from 'react-reveal';
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 
@@ -22,40 +23,40 @@ class Partners extends React.PureComponent {
           <title>Start Ups</title>
           <meta name="description" content="Start Ups" />
         </Helmet>
-        <div className="ui center aligned grid startup startupHeader startup1">
+        <div className="ui center aligned grid startupHeader startup1">
           <div className="row">
             <div className="left floated column">
               <Header />
             </div>
           </div>
           <div className="row">
-            <div className="column startUpText">
+            <div className="column">
               <h1>START UPS</h1>
             </div>
           </div>
         </div>
 
-        <div className="ui middle aligned two column centered grid">
+        <div className="ui doubling stackable middle aligned two column centered grid plainBackground startUpPlain container">
           <div className="row zeroPadding">
-            <div className="center aligned column startup">
+            <div className="center aligned column">
               <p>
                 Offer personalized services to transform ideas into concrete
                 successful projects.
               </p>
             </div>
-            <div className="center aligned column startup startup2" />
+            <div className="center aligned column startup2" />
           </div>
-          <div className="row zeroPadding">
-            <div className="center aligned column startup startup3" />
-            <div className="center aligned column startup">
+          <div className="row computer reversed zeroPadding">
+            <div className="center aligned column">
               <p>
                 To launch your business you need first a market study in order
                 to start it on the right way.
               </p>
             </div>
+            <div className="center aligned column startup3" />
           </div>
           <div className="row zeroPadding">
-            <div className="center aligned column startup">
+            <div className="center aligned column">
               <p>
                 Business Model and Business plan in order to evaluate the
                 financial viability and stability and analyze the feasibility
@@ -63,14 +64,6 @@ class Partners extends React.PureComponent {
               </p>
             </div>
             <div className="center aligned column startup startup4" />
-          </div>
-        </div>
-        <div className="ui middle aligned center aligned grid startup startupHeader startup1">
-          <div className="row">
-            <div className="column startUpText">
-              <h1>JEHU</h1>
-              <p>FIRST JUNIOR ENTERPRISE IN HUNGARY</p>
-            </div>
           </div>
         </div>
       </div>
