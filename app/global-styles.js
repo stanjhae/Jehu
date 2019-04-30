@@ -64,7 +64,6 @@ h2{
 
 .App{
     position: relative;
-    color:#fff;
     z-index: 1;
     background-color: #fff;
     min-height: 82vh;
@@ -78,6 +77,7 @@ h2{
   margin-left: 0;
   margin-right: 0;
 }
+
 .footer{
     background-color:#1A1C1D;
     color: #fff !important;

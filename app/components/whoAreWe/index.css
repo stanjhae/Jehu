@@ -5,7 +5,7 @@
   height: 60vh;
 }
 .who1{
-  background-image: url('./who1.jpg');
+  /*background-image: url('./who1.jpg');*/
 }
 .who2{
   background-image: url('./counter.jpg');

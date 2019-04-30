@@ -1,156 +1,63 @@
 import React from 'react';
-// import { FormattedMessage } from 'react-intl';
-
-import { Dropdown, Menu, Button } from 'semantic-ui-react';
-import Flip from 'react-reveal/Flip';
+import './Header.css';
 import HeaderLink from './HeaderLink';
-// import messages from './messages';
-import './index.css';
-/* eslint-disable react/prefer-stateless-function */
+import menuButton from '../../images/menuButton.png';
+import SideBar from '../sideBar/SideBar';
+import Backdrop from '../backdrop/Backdrop';
+import HeaderLinkContainer, { HeaderSubLink } from './HeaderLinkContainer';
+
 class Header extends React.Component {
-  state = { width: window.innerWidth, visible: false };
-
-  componentDidMount() {
-    this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
-  }
-
-  updateWindowDimensions = () => {
-    this.setState({ width: window.innerWidth });
-    if (this.state.width > 768) {
-      this.setState({ visible: true });
-    } else {
-      this.setState({ visible: false });
-    }
+  state = {
+    sideBarIsShowing: false,
   };
 
-  toggleMenu = () => {
-    this.setState({ visible: !this.state.visible });
-  };
-
-  closeMenu = () => {
-    if (this.state.width < 770) this.setState({ visible: false });
-  };
+  toggleSideBar = () => { this.setState({sideBarIsShowing: !this.state.sideBarIsShowing})};
 
   render() {
-    const { visible, width } = this.state;
+    const { sideBarIsShowing } = this.state;
     return (
-      <div>
-        <Menu className="header" stackable>
-          <Menu.Menu position="left">
-            <Menu.Item icon header className="headerImage logoLink">
-              {/* <HeaderLink to="/" onClick={this.closeMenu}> */}
-              {/* <img alt="logo" src={Logo} /> */}
-              {/* </HeaderLink> */}
-              <HeaderLink to="/" onClick={this.closeMenu}>
-                <h3>JEHU</h3>
-              </HeaderLink>
-              {width < 770 && (
-                <div style={{ position: 'absolute', right: 0 }}>
-                  <Flip top duration={1000} delay={2000}>
-                    {!visible && (
-                      <Button icon="bars" onClick={this.toggleMenu} />
-                    )}
-                    {/* {!visible && <Button content='Close' icon='close' labelPosition='left' onClick={this.toggleMenu}/>} */}
-                  </Flip>
-                </div>
-              )}
-            </Menu.Item>
-          </Menu.Menu>
-          {visible && (
-            <Menu.Menu position="right">
-              <Menu.Item className="aboutLink">
-                <Dropdown text="About" pointing className="link item">
-                  <Dropdown.Menu>
-                    <Dropdown.Item
-                      as={HeaderLink}
-                      to="/about/who"
-                      onClick={this.closeMenu}
-                    >
-                      Who are we?
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </Menu.Item>
-              <Menu.Item className="serviceLink">
-                <Dropdown text="Our Services" pointing className="link item">
-                  <Dropdown.Menu>
-                    <Dropdown.Item
-                      as={HeaderLink}
-                      to="/process"
-                      onClick={this.closeMenu}
-                    >
-                      JEHU process
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                      as={HeaderLink}
-                      to="/startups"
-                      onClick={this.closeMenu}
-                    >
-                      Start Ups
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                      as={HeaderLink}
-                      to="/businessConsulting"
-                      onClick={this.closeMenu}
-                    >
-                      Business Consulting
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                      as={HeaderLink}
-                      to="/translation"
-                      onClick={this.closeMenu}
-                    >
-                      Translation
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                      as={HeaderLink}
-                      to="/itDev"
-                      onClick={this.closeMenu}
-                    >
-                      IT Development
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                      as={HeaderLink}
-                      to="/itCons"
-                      onClick={this.closeMenu}
-                    >
-                      IT Consulting
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                      as={HeaderLink}
-                      to="/engineering"
-                      onClick={this.closeMenu}
-                    >
-                      Engineering
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </Menu.Item>
-              <Menu.Item
-                as={HeaderLink}
-                to="/contact"
-                onClick={this.closeMenu}
-                className="galleryLink"
-              >
-                Contact
-              </Menu.Item>
-              {/* <Menu.Item */}
-              {/* as={HeaderLink} */}
-              {/* to="/contact" */}
-              {/* onClick={this.closeMenu} */}
-              {/* className="contactLink" */}
-              {/* > */}
-              {/* Contact */}
-              {/* </Menu.Item> */}
-            </Menu.Menu>
-          )}
-        </Menu>
-      </div>
+      <>
+        <header className="header">
+          <HeaderLink className="headerNameDiv" to="/">
+            <div>
+              <p>JEHU</p>
+            </div>
+          </HeaderLink>
+
+          <div className="navigationLinksContainer">
+            <HeaderLinkContainer name="About">
+              <HeaderSubLink linkTo="/about/who" name="Who are we?" />
+            </HeaderLinkContainer>
+
+            <HeaderLinkContainer name="Our Services">
+              <HeaderSubLink linkTo="/process" name="JEHU Process" />
+              <HeaderSubLink linkTo="/startups" name="Start-Ups" />
+              <HeaderSubLink linkTo="/businessConsulting" name="Business Consulting" />
+              <HeaderSubLink linkTo="/translation" name="Translation" />
+              <HeaderSubLink linkTo="/itDev" name="IT Development" />
+              <HeaderSubLink linkTo="/itCons" name="IT Consulting" />
+              <HeaderSubLink linkTo="/engineering" name="Engineering" />
+            </HeaderLinkContainer>
+
+            <HeaderLinkContainer name="Contact">
+              <HeaderSubLink linkTo="/contact" name="Contact Us" />
+            </HeaderLinkContainer>
+          </div>
+
+          <div onClick={() => this.toggleSideBar()} className="menuButton">
+            <img alt="menuIcon" src={menuButton} className="menuIcon" />
+          </div>
+        </header>
+
+        <SideBar
+          closeMenu={() => this.toggleSideBar()}
+          sideBarIsShowing={sideBarIsShowing}
+        />
+
+        {sideBarIsShowing && (
+          <Backdrop handleBackdropPress={() => this.toggleSideBar()} />
+        )}
+      </>
     );
   }
 }
