@@ -36,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Exo 2', sans-serif !important;
 }
 h1{
-  font-size: 60px !important;
+  font-size: 50px !important;
 }
 h2{
   font-size: 32px !important;
@@ -66,7 +66,6 @@ h2{
     position: relative;
     color:#fff;
     z-index: 1;
-    /*margin-bottom: 75px;*/
     background-color: #fff;
     min-height: 82vh;
     overflow: hidden;
@@ -85,10 +84,6 @@ h2{
 }
 .footer h1, .footer h2, .App-header h1, .debmunTop h1{
     color: #fff !important;
-}
-.secLetter{
-    min-height: 70vh;
-}
-`;
+}`;
 
 export default GlobalStyle;

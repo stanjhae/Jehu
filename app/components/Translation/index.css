@@ -1,32 +1,25 @@
-.translation{
+.translationPlain .column{
   background-position: center;
   background-size: cover;
-  height: 60vh;
-}
-.translationHeader{
-  background-attachment: fixed;
-}
-.translation p{
-  font-size: 1.5rem;
-}
-.translationText{
-  color:#fff;
-  font-size: 3rem;
+  min-height: 50vh;
 }
 .translation1{
-  background-image: url('../Home/home5.jpg');
+  background-image: url('./trans2.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
 }
 .translation2{
-  background-image: url('./startup1.jpg');
+  background-image: url('./trans1.jpg');
 }
 .translation3{
-  background-image: url('./startup2.jpg');
+  background-image: url('./trans3.jpg');
 }
 .translation4{
-  background-image: url('./startup3.jpg');
+  background-image: url('./trans4.jpg');
 }
 .translation5{
-  background-image: url('./startup3.jpg');
+  background-image: url('./trans5.jpg');
 }
 .zeroMargin{
   margin: 0 !important;

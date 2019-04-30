@@ -1,36 +1,6 @@
-.itCons{
+.itCons1{
+  background-image: url('./itCons.jpg');
   background-position: center;
   background-size: cover;
   height: 60vh;
-}
-.itConsHeader{
-  background-attachment: fixed;
-}
-.itCons p{
-  font-size: 1.5rem;
-}
-.itConsText{
-  color:#fff;
-  font-size: 3rem;
-}
-.itCons1{
-  background-image: url('../Home/home5.jpg');
-}
-.itCons2{
-  background-image: url('./startup1.jpg');
-}
-.itCons3{
-  background-image: url('./startup2.jpg');
-}
-.itCons4{
-  background-image: url('./startup3.jpg');
-}
-.itCons5{
-  background-image: url('../Home/home2.jpg');
-}
-.zeroMargin{
-  margin: 0 !important;
-}
-.zeroPadding{
-  padding: 0 !important;
 }

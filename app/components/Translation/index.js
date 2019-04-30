@@ -5,6 +5,7 @@
  */
 
 import React from 'react';
+import { Fade } from 'react-reveal';
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 
@@ -22,68 +23,76 @@ class Translation extends React.PureComponent {
           <title>Translation</title>
           <meta name="description" content="Translation" />
         </Helmet>
-        <div className="ui center aligned grid translation translation1">
+        <div className="ui center aligned grid translation1">
           <div className="row">
             <div className="left floated column">
               <Header />
             </div>
           </div>
           <div className="row">
-            <div className="column translationText">
+            <Fade top duration={2000} className="column">
               <h1>TRANSLATION</h1>
-            </div>
+            </Fade>
           </div>
         </div>
 
-        <div className="ui middle aligned two column centered grid">
+        <div className="ui middle aligned two column centered grid plainBackground translationPlain container">
           <div className="row zeroPadding">
-            <div className="center aligned column translation">
-              <h1>Business and finance</h1>
-              <p>Website localization</p>
-              <p>Marketing collateral</p>
-              <p>Application strings</p>
-              <p>Surveys</p>
+            <div className="center aligned column">
+              <Fade left duration={2000}>
+                <h2>Business and finance</h2>
+                <p>Website localization</p>
+                <p>Marketing collateral</p>
+                <p>Application strings</p>
+                <p>Surveys</p>
+              </Fade>
             </div>
-            <div className="center aligned column translation translation2" />
+            <Fade right duration={2000}>
+              <div className="center aligned column translation2" />
+            </Fade>
           </div>
           <div className="row zeroPadding">
-            <div className="center aligned column translation translation3" />
-            <div className="center aligned column translation">
-              <h1>Technology and software</h1>
-              <p>Documentation</p>
-              <p>Customer support</p>
-              <p>Websites & Mobile apps</p>
+            <Fade left duration={2000}>
+              <div className="center aligned column translation3" />
+            </Fade>
+            <div className="center aligned column">
+              <Fade right duration={2000}>
+                <h2>Technology and software</h2>
+                <p>Documentation</p>
+                <p>Customer support</p>
+                <p>Websites & Mobile apps</p>
+              </Fade>
             </div>
           </div>
           <div className="row zeroPadding">
-            <div className="center aligned column translation">
-              <h1>Ecommerce</h1>
-              <p>Product descriptions</p>
-              <p>User reviews</p>
-              <p>Questions and answers</p>
-              <p>Static website copy</p>
-              <p>Branding materials</p>
+            <div className="center aligned column">
+              <Fade left duration={2000}>
+                <h2>Ecommerce</h2>
+                <p>Product descriptions</p>
+                <p>User reviews</p>
+                <p>Questions and answers</p>
+                <p>Static website copy</p>
+                <p>Branding materials</p>
+              </Fade>
             </div>
-            <div className="center aligned column translation translation4" />
+            <Fade right duration={2000}>
+              <div className="center aligned column translation4" />
+            </Fade>
           </div>
           <div className="row zeroPadding">
-            <div className="center aligned column translation translation5" />
-            <div className="center aligned column translation">
-              <h1>Marketing and advertising</h1>
-              <p>Newsletters</p>
-              <p>Social media content</p>
-              <p>Ads</p>
-              <p>Presentations</p>
-              <p>Press releases</p>
-              <p>Printed marketing materials</p>
-            </div>
-          </div>
-        </div>
-        <div className="ui middle aligned center aligned grid translation translationHeader translation1">
-          <div className="row">
-            <div className="column translationText">
-              <h1>JEHU</h1>
-              <p>FIRST JUNIOR ENTERPRISE IN HUNGARY</p>
+            <Fade left duration={2000}>
+              <div className="center aligned column translation5" />
+            </Fade>
+            <div className="center aligned column">
+              <Fade right duration={2000}>
+                <h2>Marketing and advertising</h2>
+                <p>Newsletters</p>
+                <p>Social media content / Ads</p>
+                <p>Presentations</p>
+                <p>Press releases</p>
+                <p>Printed marketing materials</p>
+                <br />
+              </Fade>
             </div>
           </div>
         </div>

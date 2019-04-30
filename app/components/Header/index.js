@@ -97,41 +97,36 @@ class Header extends React.Component {
                       as={HeaderLink}
                       to="/businessConsulting"
                       onClick={this.closeMenu}
-                      disabled
                     >
-                      Business Consulting (Coming soon)
+                      Business Consulting
                     </Dropdown.Item>
                     <Dropdown.Item
                       as={HeaderLink}
                       to="/translation"
                       onClick={this.closeMenu}
-                      disabled
                     >
-                      Translation (Coming soon)
+                      Translation
                     </Dropdown.Item>
                     <Dropdown.Item
                       as={HeaderLink}
                       to="/itDev"
                       onClick={this.closeMenu}
-                      disabled
                     >
-                      IT Development (Coming soon)
+                      IT Development
                     </Dropdown.Item>
                     <Dropdown.Item
                       as={HeaderLink}
                       to="/itCons"
                       onClick={this.closeMenu}
-                      disabled
                     >
-                      IT Consulting (Coming soon)
+                      IT Consulting
                     </Dropdown.Item>
                     <Dropdown.Item
                       as={HeaderLink}
                       to="/engineering"
                       onClick={this.closeMenu}
-                      disabled
                     >
-                      Engineering (Coming soon)
+                      Engineering
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>

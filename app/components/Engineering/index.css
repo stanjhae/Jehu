@@ -1,35 +1,50 @@
-.engineering{
+.engineeringPlain .column{
   background-position: center;
   background-size: cover;
-  height: 20vh;
-}
-.engineeringHeader{
-  background-attachment: fixed;
   height: 50vh;
 }
-.engineering p{
-  color:#fff;
-  font-size: 1.5rem;
-  padding-top: 10vh;
-}
-.engineeringText{
-  color:#fff;
-  font-size: 3rem;
+.engineeringPlain h2{
+  color: #fff;
+  padding: 15% 0;
 }
 .engineering1{
-  background-image: url('../Home/home5.jpg');
+  background-image: url('./engr1.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
 }
 .engineering2{
-  background-image: url('./startup1.jpg');
+  background-image: url('./engr2.jpg');
 }
 .engineering3{
-  background-image: url('./startup2.jpg');
+  background-image: url('./engr3.jpg');
 }
 .engineering4{
-  background-image: url('./startup3.jpg');
+  background-image: url('./engr4.jpg');
 }
 .engineering5{
-  background-image: url('../Home/home2.jpg');
+  background-image: url('./engr5.jpg');
+}
+.engineering6{
+  background-image: url('./engr6.jpg');
+}
+.engineering7{
+  background-image: url('./engr7.jpg');
+}
+.engineering8{
+  background-image: url('./engr8.jpg');
+}
+.engineering9{
+  background-image: url('./engr9.jpg');
+}
+.engineering10{
+  background-image: url('./engr10.jpg');
+}
+.engineering11{
+  background-image: url('./engr11.jpg');
+}
+.engineering12{
+  background-image: url('./engr12.jpg');
 }
 .zeroMargin{
   margin: 0 !important;

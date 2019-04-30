@@ -1,23 +1,24 @@
 .bizConsultingPlain .column{
-  min-height: 50vh;
+  min-height: 60vh;
   background-position: center;
   background-size: cover;
-}
-.bizConsultingHeader{
-  min-height: 50vh;
+  padding: 3% 0;
 }
 .bizConsulting1{
-  background-image: url('../Home/home5.jpg');
+  background-image: url('./biz2.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
 }
 .bizConsulting2{
   background-image: url('./biz1.jpg');
 }
-/*.bizConsulting3{*/
-  /*background-image: url('./startup2.jpg');*/
-/*}*/
-/*.bizConsulting4{*/
-  /*background-image: url('./startup3.jpg');*/
-/*}*/
+.bizConsulting3{
+  background-image: url('./social.jpg');
+}
+.bizConsulting4{
+  background-image: url('./strategy.jpg');
+}
 .zeroMargin{
   margin: 0 !important;
 }

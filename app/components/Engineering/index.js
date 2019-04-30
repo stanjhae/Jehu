@@ -5,6 +5,7 @@
  */
 
 import React from 'react';
+import { Fade } from 'react-reveal';
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 
@@ -22,80 +23,83 @@ class Partners extends React.PureComponent {
           <title>Engineering</title>
           <meta name="description" content="Engineering" />
         </Helmet>
-        <div className="ui center aligned grid engineering engineeringHeader engineering1">
+        <div className="ui center aligned grid engineering1">
           <div className="row">
             <div className="left floated column">
               <Header />
             </div>
           </div>
           <div className="row">
-            <div className="column engineeringText">
-              <h1>Engineering</h1>
-            </div>
+            <Fade top duration={2000} className="column">
+              <h1>ENGINEERING</h1>
+            </Fade>
           </div>
         </div>
 
-        <div className="ui middle aligned two column centered grid">
+        <div className="ui doubling stackable middle aligned three column centered grid plainBackground engineeringPlain">
           <div className="row zeroPadding">
-            <div className="center aligned column engineering engineering2">
-              <p>Testing Methods</p>
+            <div className="center aligned column engineering2">
+              <Fade left duration={2000}>
+                <h2>Testing Methods</h2>
+              </Fade>
             </div>
-            <div className="center aligned column engineering engineering3">
-              <p>PCB: Designing and programming</p>
+            <div className="center aligned column engineering3">
+              <Fade top duration={2000}>
+                <h2>PCB: Designing and programming</h2>
+              </Fade>
             </div>
-          </div>
-          <div className="row zeroPadding">
-            <div className="center aligned column engineering engineering4">
-              <p>Medical robots assistance</p>
+            <div className="center aligned column engineering4">
+              <Fade right duration={2000}>
+                <h2>Medical robots assistance</h2>
+              </Fade>
             </div>
-            <div className="center aligned column engineering engineering5">
-              <p>Sensor programming</p>
+            <div className="center aligned column engineering5">
+              <Fade left duration={2000}>
+                <h2>Sensor programming</h2>
+              </Fade>
             </div>
-          </div>
-          <div className="row zeroPadding">
-            <div className="center aligned column engineering engineering2">
-              <p>Sensor programming</p>
+            <div className="center aligned column engineering6">
+              <Fade bottom duration={2000}>
+                <h2>Strength of materials</h2>
+              </Fade>
             </div>
-            <div className="center aligned column engineering engineering3">
-              <p>
-                Feasibility study, cost implication and performance benefits of
-                new equipments
-              </p>
+            <div className="center aligned column engineering7">
+              <Fade right duration={2000}>
+                <h2>
+                  Feasibility study, cost implication and performance benefits
+                  of new equipments
+                </h2>
+              </Fade>
             </div>
-          </div>
-          <div className="row zeroPadding">
-            <div className="center aligned column engineering engineering4">
-              <p>
-                Conception (What features a model should have based on analysis
-                of customers needs and preferences)
-              </p>
+            <div className="center aligned column engineering8">
+              <Fade left duration={2000}>
+                <h2>
+                  Conception (What features a model should have based on
+                  analysis of customers needs and preferences)
+                </h2>
+              </Fade>
             </div>
-            <div className="center aligned column engineering engineering5">
-              <p>Modelling, simulation and analysis of engineering systems</p>
+            <div className="center aligned column engineering9">
+              <Fade bottom duration={2000}>
+                <h2>
+                  Modelling, simulation and analysis of engineering systems
+                </h2>
+              </Fade>
             </div>
-          </div>
-          <div className="row zeroPadding">
-            <div className="center aligned column engineering engineering2">
-              <p>Strength of materials</p>
+            <div className="center aligned column engineering10">
+              <Fade right duration={2000}>
+                <h2>Matlab programming</h2>
+              </Fade>
             </div>
-            <div className="center aligned column engineering engineering3">
-              <p>Matlab programming</p>
+            <div className="center aligned column engineering11">
+              <Fade left duration={2000}>
+                <h2>LAbVIEW Programming</h2>
+              </Fade>
             </div>
-          </div>
-          <div className="row zeroPadding">
-            <div className="center aligned column engineering engineering4">
-              <p>LAbVIEW Proramming</p>
-            </div>
-            <div className="center aligned column engineering engineering5">
-              <p>Control Systems</p>
-            </div>
-          </div>
-        </div>
-        <div className="ui middle aligned center aligned grid engineering engineeringHeader engineering1">
-          <div className="row">
-            <div className="column engineeringText">
-              <h1>JEHU</h1>
-              <p>FIRST JUNIOR ENTERPRISE IN HUNGARY</p>
+            <div className="center aligned column engineering12">
+              <Fade right duration={2000}>
+                <h2>Control Systems</h2>
+              </Fade>
             </div>
           </div>
         </div>

@@ -1,36 +1,6 @@
-.ItDev{
+.ItDev1{
+  background-image: url('./itDev.jpg');
   background-position: center;
   background-size: cover;
   height: 60vh;
-}
-.ItDevHeader{
-  background-attachment: fixed;
-}
-.ItDev p{
-  font-size: 1.5rem;
-}
-.ItDevText{
-  color:#fff;
-  font-size: 3rem;
-}
-.ItDev1{
-  background-image: url('../Home/home5.jpg');
-}
-.ItDev2{
-  background-image: url('./startup1.jpg');
-}
-.ItDev3{
-  background-image: url('./startup2.jpg');
-}
-.ItDev4{
-  background-image: url('./startup3.jpg');
-}
-.ItDev5{
-  background-image: url('../Home/home2.jpg');
-}
-.zeroMargin{
-  margin: 0 !important;
-}
-.zeroPadding{
-  padding: 0 !important;
 }

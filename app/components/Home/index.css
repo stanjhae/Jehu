@@ -7,32 +7,21 @@
   /*background-attachment: fixed;*/
   height: 60vh;
 }
-.homeHeader{
-  height: 105vh;
-}
 .headerRow{
   height: 0;
 }
-/*.headerColumn{*/
-  /*margin-top: -100px !important;*/
-/*}*/
+.headerColumn h1{
+  font-size: 65px !important;
+}
 .offer{
   min-height: 40vh;
 }
 .offer p{
-  font-family: 'Exo 2', sans-serif;
   font-size: 25px;
-}
-.stats {
-  font-family: 'Exo 2', sans-serif;
-  height: 40vh;
-  font-size: 30px;
-}
-.stats p{
-  font-family: 'Exo 2', sans-serif;
 }
 .pic1{
   background-image: url('./home7.jpg');
+  height: 105vh;
 }
 .pic2{
   background-image: url('./services.jpg');
@@ -40,9 +29,13 @@
   background-size: cover;
 }
 .pic3{
-  background-image: url('./counter.jpg');
+  background-image: url('./students.jpg');
   background-position: center;
   background-size: cover;
+}
+.pic3 p{
+  padding: 20% 0px;
+  font-size: 30px;
 }
 .map{
   height: 50vh;

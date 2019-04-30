@@ -30,40 +30,52 @@ class Partners extends React.PureComponent {
             </div>
           </div>
           <div className="row">
-            <div className="column">
+            <Fade top duration={2000} className="column">
               <h1>START UPS</h1>
-            </div>
+            </Fade>
           </div>
         </div>
 
         <div className="ui doubling stackable middle aligned two column centered grid plainBackground startUpPlain container">
           <div className="row zeroPadding">
             <div className="center aligned column">
-              <p>
-                Offer personalized services to transform ideas into concrete
-                successful projects.
-              </p>
+              <Fade left duration={2000}>
+                <p>
+                  Offer personalized services to transform ideas into concrete
+                  successful projects.
+                </p>
+              </Fade>
             </div>
-            <div className="center aligned column startup2" />
+            <Fade right duration={2000}>
+              <div className="center aligned column startup2" />
+            </Fade>
           </div>
           <div className="row computer reversed zeroPadding">
             <div className="center aligned column">
-              <p>
-                To launch your business you need first a market study in order
-                to start it on the right way.
-              </p>
+              <Fade right duration={2000}>
+                <p>
+                  To launch your business you need first a market study in order
+                  to start it on the right way.
+                </p>
+              </Fade>
             </div>
-            <div className="center aligned column startup3" />
+            <Fade left duration={2000}>
+              <div className="center aligned column startup3" />
+            </Fade>
           </div>
           <div className="row zeroPadding">
             <div className="center aligned column">
-              <p>
-                Business Model and Business plan in order to evaluate the
-                financial viability and stability and analyze the feasibility
-                and profitability of your project.
-              </p>
+              <Fade left duration={2000}>
+                <p>
+                  Business Model and Business plan in order to evaluate the
+                  financial viability and stability and analyze the feasibility
+                  and profitability of your project.
+                </p>
+              </Fade>
             </div>
-            <div className="center aligned column startup startup4" />
+            <Fade right duration={2000}>
+              <div className="center aligned column startup startup4" />
+            </Fade>
           </div>
         </div>
       </div>

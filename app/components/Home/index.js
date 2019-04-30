@@ -44,13 +44,14 @@ export class Home extends React.PureComponent {
           <div className="row">
             <div className="column">
               <Fade top duration={2000}>
-                <h2>WHAT IS A JUNIOR ENTERPRISE?</h2>
+                <h2>WHO ARE WE?</h2>
               </Fade>
               <Fade bottom duration={2000}>
                 <p>
-                  A Junior Enterprise is a non-profit organization, formed and
-                  managed exclusively by university students, which provides
-                  services for companies, institutions, and individuals.
+                  We are embarking on a bold & ambitious journey to help
+                  organization boost their work , incubate students to launch
+                  their startup and to build a community to conquer the world of
+                  business !
                 </p>
               </Fade>
             </div>
@@ -59,7 +60,7 @@ export class Home extends React.PureComponent {
         <div className="ui five columns doubling stackable middle aligned center aligned grid offer pic2">
           <div className="row">
             <Bounce top duration={2000}>
-              <h2>WHAT WE OFFER</h2>
+              <p>WHAT WE OFFER</p>
             </Bounce>
           </div>
           <div className="row">
@@ -86,7 +87,7 @@ export class Home extends React.PureComponent {
 
         <div className="ui middle aligned center aligned grid plainBackground text container">
           <div className="row">
-            <Fade className="column" left cascade duration={2000}>
+            <Fade className="column" left duration={2000}>
               <div>
                 <p>
                   " Europe’s future is in the hands of its young people. It is
@@ -104,95 +105,16 @@ export class Home extends React.PureComponent {
             </Fade>
           </div>
         </div>
-        {/* <div className="ui five columns doubling stackable middle aligned center aligned grid stats pic3"> */}
-        {/* <div className="row"> */}
-        {/* <div className="column"> */}
-        {/* <CountUp */}
-        {/* start={0} */}
-        {/* end={900} */}
-        {/* delay={0} */}
-        {/* duration={3} */}
-        {/* redraw */}
-        {/* useEasing={false} */}
-        {/* > */}
-        {/* {({ countUpRef }) => ( */}
-        {/* <div> */}
-        {/* <span ref={countUpRef} /> */}
-        {/* </div> */}
-        {/* )} */}
-        {/* </CountUp> */}
-        {/* <p>JUNIOR ENTERPRISE</p> */}
-        {/* </div> */}
-        {/* <div className="column"> */}
-        {/* <CountUp */}
-        {/* start={0} */}
-        {/* end={35000} */}
-        {/* delay={0} */}
-        {/* duration={3} */}
-        {/* redraw */}
-        {/* useEasing={false} */}
-        {/* > */}
-        {/* {({ countUpRef }) => ( */}
-        {/* <div> */}
-        {/* <span ref={countUpRef} /> */}
-        {/* </div> */}
-        {/* )} */}
-        {/* </CountUp> */}
-        {/* <p>UNIVERSITY STUDENTS</p> */}
-        {/* </div> */}
-        {/* <div className="column"> */}
-        {/* <CountUp */}
-        {/* start={0} */}
-        {/* end={30} */}
-        {/* delay={0} */}
-        {/* duration={3} */}
-        {/* redraw */}
-        {/* useEasing={false} */}
-        {/* > */}
-        {/* {({ countUpRef }) => ( */}
-        {/* <div> */}
-        {/* <span ref={countUpRef} /> */}
-        {/* </div> */}
-        {/* )} */}
-        {/* </CountUp> */}
-        {/* <p>COUNTRIES</p> */}
-        {/* </div> */}
-        {/* <div className="column"> */}
-        {/* <CountUp */}
-        {/* start={0} */}
-        {/* end={8500} */}
-        {/* delay={0} */}
-        {/* duration={3} */}
-        {/* redraw */}
-        {/* useEasing={false} */}
-        {/* > */}
-        {/* {({ countUpRef }) => ( */}
-        {/* <div> */}
-        {/* <span ref={countUpRef} /> */}
-        {/* </div> */}
-        {/* )} */}
-        {/* </CountUp> */}
-        {/* <p>PROJECTS FOR CLIENTS/YEAR</p> */}
-        {/* </div> */}
-        {/* <div className="column"> */}
-        {/* <CountUp */}
-        {/* start={0} */}
-        {/* end={16} */}
-        {/* delay={0} */}
-        {/* duration={3} */}
-        {/* redraw */}
-        {/* useEasing={false} */}
-        {/* > */}
-        {/* {({ countUpRef }) => ( */}
-        {/* <div> */}
-        {/* <span ref={countUpRef} /> */}
-        {/* </div> */}
-        {/* )} */}
-        {/* </CountUp> */}
-        {/* <p>MILLION TURNOVER/YEAR (EUROS)</p> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
+        <div className="ui five columns doubling stackable middle aligned center aligned grid offer pic3">
+          <div className="ui center aligned row text container">
+            <Bounce top duration={2000}>
+              <p>
+                900 Junior Enterprise around the world entirely executed by
+                students since 1967
+              </p>
+            </Bounce>
+          </div>
+        </div>
         <div className="ui grid map">
           <div className="row">
             <Map

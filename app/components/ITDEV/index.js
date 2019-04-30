@@ -5,6 +5,7 @@
  */
 
 import React from 'react';
+import { Fade } from 'react-reveal';
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 
@@ -22,33 +23,28 @@ class Partners extends React.PureComponent {
           <title>IT Development</title>
           <meta name="description" content="IT Development" />
         </Helmet>
-        <div className="ui center aligned grid ItDev ItDev1">
+        <div className="ui center aligned grid ItDev1">
           <div className="row">
             <div className="left floated column">
               <Header />
             </div>
           </div>
           <div className="row">
-            <div className="column ItDevText">
-              <h1>IT DEVELOPMENT</h1>
-            </div>
+            <Fade top duration={2000} className="column">
+              <h1>IT</h1>
+              <h1>DEVELOPMENT</h1>
+            </Fade>
           </div>
         </div>
-        <div className="ui middle aligned center aligned grid ItDev">
+        <div className="ui middle aligned center aligned grid plainBackground text container">
           <div className="row">
             <div className="column">
-              <p>Software development</p>
-              <p>Mobile application development</p>
-              <p>Data ItDeving and database creation (Database management)</p>
-              <p>Web development</p>
-            </div>
-          </div>
-        </div>
-        <div className="ui middle aligned center aligned grid ItDev ItDev1">
-          <div className="row">
-            <div className="column ItDevText">
-              <h1>JEHU</h1>
-              <p>FIRST JUNIOR ENTERPRISE IN HUNGARY</p>
+              <Fade bottom duration={2000}>
+                <p>Software development</p>
+                <p>Mobile application development</p>
+                <p>Data ItDeving and database creation (Database management)</p>
+                <p>Web development</p>
+              </Fade>
             </div>
           </div>
         </div>
