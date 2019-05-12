@@ -9,8 +9,8 @@ const Root = props => {
     <>
       <Header />
       {children}
-      <ScrollButton scrollStepInPx="200" delayInMs="16.66" />
-      <Footer />
+      {/*<ScrollButton scrollStepInPx="200" delayInMs="16.66" />*/}
+      {/*<Footer />*/}
     </>
   );
 };

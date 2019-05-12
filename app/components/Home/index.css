@@ -7,6 +7,18 @@
   /*background-attachment: fixed;*/
   height: 60vh;
 }
+
+.homeScreen {
+  flex-direction: column;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./home7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .headerRow{
   height: 0;
 }
