@@ -24,12 +24,7 @@ class Translation extends React.PureComponent {
           <meta name="description" content="Translation" />
         </Helmet>
         <div className="ui center aligned grid translation1">
-          <div className="row">
-            <div className="left floated column">
-              <Header />
-            </div>
-          </div>
-          <div className="row">
+          <div className="row centeredd">
             <Fade top duration={2000} className="column">
               <h1>TRANSLATION</h1>
             </Fade>

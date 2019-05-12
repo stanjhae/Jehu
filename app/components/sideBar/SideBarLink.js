@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './SideBar.css';
 import leftAngleBracket from '../../images/leftAngleBracket.png';
 
-const SideBarLink = (props) => {
+const SideBarLink = props => {
   const { name, onClick } = props;
   return (
     <div onClick={onClick} className="sideBarNavigationNameAndIconDiv">

@@ -4,7 +4,7 @@
   /*background-attachment: fixed;*/
   height: 60vh;
 }
-.who1{
+.who1 {
   /*background-image: url('./who1.jpg');*/
 }
 .who2{
@@ -12,6 +12,12 @@
   background-position: center;
   background-size: cover;
 }
+
+.centeredd {
+  display: flex;
+  align-items: center !important;
+}
+
 .who3{
   background-image: url('../Home/home2.jpg');
 }

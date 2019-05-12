@@ -48,12 +48,7 @@ class Gallery extends React.PureComponent {
           <meta name="description" content="Gallery" />
         </Helmet>
         <div className="ui center aligned grid process process1">
-          <div className="row">
-            <div className="left floated column">
-              <Header />
-            </div>
-          </div>
-          <div className="row">
+          <div className="row centeredd">
             <div className="column galleryText">
               <h1>GALLERY</h1>
             </div>

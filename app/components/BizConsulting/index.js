@@ -24,12 +24,7 @@ class Partners extends React.PureComponent {
           <meta name="description" content="Business Consulting" />
         </Helmet>
         <div className="ui center aligned grid bizConsultingHeader bizConsulting1">
-          <div className="row">
-            <div className="left floated column">
-              <Header />
-            </div>
-          </div>
-          <div className="row">
+          <div className="row centeredd">
             <Fade top duration={2000} className="column">
               <h1>BUSINESS</h1>
               <h1>CONSULTING</h1>

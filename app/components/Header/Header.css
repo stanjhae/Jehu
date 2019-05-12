@@ -1,9 +1,9 @@
 .header {
   height: 85px;
   width: 100%;
-  background-color: white;
   justify-content: space-between;
-  z-index: 200;
+  z-index: 20;
+  position: absolute;
   max-height: 100px;
 }
 
@@ -93,8 +93,8 @@
 
 @media only screen and (max-width: 800px) {
   .header {
-    position: fixed;
-    height: 8%;
+    height: 55px;
+    z-index: 10;
   }
 
   .headerNameDiv p {

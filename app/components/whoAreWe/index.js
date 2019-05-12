@@ -1,22 +1,9 @@
-/**
- *
- * whoAreWe
- *
- */
-
 import React from 'react';
 import { Fade, Bounce } from 'react-reveal';
-import Header from 'components/Header';
 import './index.css';
 import CountUp from 'react-countup';
 import { Helmet } from 'react-helmet';
-// import PropTypes from 'prop-types';
-// import styled from 'styled-components';
 
-// import { FormattedMessage } from 'react-intl';
-// import messages from './messages';
-
-/* eslint-disable react/prefer-stateless-function */
 class WhoAreWe extends React.PureComponent {
   render() {
     return (
@@ -25,13 +12,8 @@ class WhoAreWe extends React.PureComponent {
           <title>Who are we?</title>
           <meta name="description" content="Who are we" />
         </Helmet>
-        <div className="ui center aligned grid who who1">
-          <div className="row">
-            <div className="left floated column">
-              <Header />
-            </div>
-          </div>
-          <div className="row">
+        <div className="ui center aligned middle aligned grid who who1 ">
+          <div className="row centeredd">
             <Fade className="column" top duration={2000}>
               <h1>WHO ARE WE</h1>
             </Fade>
@@ -58,7 +40,10 @@ class WhoAreWe extends React.PureComponent {
             </div>
           </div>
         </div>
-        <div className="ui five columns doubling stackable middle aligned center aligned grid offer who2">
+        <div
+          style={{ color: 'white' }}
+          className="ui five columns doubling stackable middle aligned center aligned grid offer who2"
+        >
           <Bounce duration={2000} bottom cascade className="row">
             <div className="column">
               <CountUp
@@ -143,7 +128,7 @@ class WhoAreWe extends React.PureComponent {
                   </div>
                 )}
               </CountUp>
-              <p>MILLION TURNOVER/YEAR (EUROS)</p>
+              <p>MILLION TURNOVERS/YEAR (EUROS)</p>
             </div>
           </Bounce>
         </div>

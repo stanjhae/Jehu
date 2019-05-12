@@ -13,7 +13,7 @@ const SideBar = props => {
     <SideBarWrapper closeMenu={closeMenu} sideBarIsShowing={sideBarIsShowing}>
       <AboutLink onClickSubLink={closeMenu} />
       <OurServicesLink onClickSubLink={closeMenu} />
-      <ContactLink onClickSubLink={closeMenu}/>
+      <ContactLink onClickSubLink={closeMenu} />
     </SideBarWrapper>
   );
 };

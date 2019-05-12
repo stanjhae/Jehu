@@ -1,13 +1,11 @@
 import React from 'react';
-// import { FormattedMessage } from 'react-intl';
-//
-// import LocaleToggle from 'containers/LocaleToggle';
-// import Wrapper from './Wrapper';
-// import messages from './messages';
 
 function Footer() {
   return (
-    <div className="ui divided two equal width vertically padded grid footer">
+    <div
+      style={{ bottom: 0, width: window.innerWidth }}
+      className="ui divided two equal width vertically padded grid footer"
+    >
       <div className="row">
         <div className="column center aligned">
           {/* <a */}
@@ -15,7 +13,7 @@ function Footer() {
           {/* target="_blank" */}
           {/* > */}
           <button type="button" className="ui circular facebook icon button">
-            <i className="facebook f big icon"> </i>
+            <i className="facebook f icon"> </i>
           </button>
           {/* </a> */}
           {/* <a href="https://www.instagram.com/deb.mun/" target="_blank"> */}
@@ -23,7 +21,7 @@ function Footer() {
             type="button"
             className="ui circular instagram red icon button"
           >
-            <i className="instagram big icon"> </i>
+            <i className="instagram  icon"> </i>
           </button>
           {/* </a> */}
         </div>

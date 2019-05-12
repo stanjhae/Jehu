@@ -27,11 +27,9 @@ class Team extends React.PureComponent {
   render() {
     return (
       <div className="team overlay">
-        {/* <Fade top> */}
         <h1 className="white" style={{ textAlign: 'center' }}>
           MEET THE TEAM
         </h1>
-        {/* </Fade> */}
         <div className="ui doubling stackable vertically padded very relaxed centered grid">
           <div className="ui medium images">
             <img alt="Secretary General" src={dawoud} />
@@ -47,135 +45,6 @@ class Team extends React.PureComponent {
             <img alt="Conference Services" src={laura} />
           </div>
         </div>
-        {/* <Flip left delay={500} duration={2000}> */}
-        {/* <div className="red card"> */}
-        {/* <div className="image"> */}
-        {/* <img alt={'people'} src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"/> */}
-        {/* </div> */}
-        {/* <div className="content"> */}
-        {/* <div className="header">Matt Giampietro</div> */}
-        {/* <div className="meta"> */}
-        {/* <p>Secretary</p> */}
-        {/* </div> */}
-        {/* <div className="description"> */}
-        {/* Matthew is an interior designer living in New York. */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </Flip> */}
-        {/* <Flip right delay={1000} duration={2000}> */}
-        {/* <div className="orange card"> */}
-        {/* <div className="image"> */}
-        {/* <img alt={'people'} src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"/> */}
-        {/* </div> */}
-        {/* <div className="content"> */}
-        {/* <div className="header">Matt Giampietro</div> */}
-        {/* <div className="meta"> */}
-        {/* <p>Secretary</p> */}
-        {/* </div> */}
-        {/* <div className="description"> */}
-        {/* Matthew is an interior designer living in New York. */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </Flip> */}
-        {/* <Flip left delay={1500} duration={2000}> */}
-        {/* <div className="yellow card"> */}
-        {/* <div className="image"> */}
-        {/* <img alt={'people'} src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"/> */}
-        {/* </div> */}
-        {/* <div className="content"> */}
-        {/* <div className="header">Matt Giampietro</div> */}
-        {/* <div className="meta"> */}
-        {/* <p>Secretary</p> */}
-        {/* </div> */}
-        {/* <div className="description"> */}
-        {/* Matthew is an interior designer living in New York. */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </Flip> */}
-        {/* <Flip right delay={2000} duration={2000}> */}
-        {/* <div className="olive card"> */}
-        {/* <div className="image"> */}
-        {/* <img alt={'people'} src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"/> */}
-        {/* </div> */}
-        {/* <div className="content"> */}
-        {/* <div className="header">Matt Giampietro</div> */}
-        {/* <div className="meta"> */}
-        {/* <p>Secretary</p> */}
-        {/* </div> */}
-        {/* <div className="description"> */}
-        {/* Matthew is an interior designer living in New York. */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </Flip> */}
-        {/* <Flip left delay={2500} duration={2000}> */}
-        {/* <div className="green card"> */}
-        {/* <div className="image"> */}
-        {/* <img alt={'people'} src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"/> */}
-        {/* </div> */}
-        {/* <div className="content"> */}
-        {/* <div className="header">Matt Giampietro</div> */}
-        {/* <div className="meta"> */}
-        {/* <p>Secretary</p> */}
-        {/* </div> */}
-        {/* <div className="description"> */}
-        {/* Matthew is an interior designer living in New York. */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </Flip> */}
-        {/* <Flip right delay={3000} duration={2000}> */}
-        {/* <div className="teal card"> */}
-        {/* <div className="image"> */}
-        {/* <img alt={'people'} src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"/> */}
-        {/* </div> */}
-        {/* <div className="content"> */}
-        {/* <div className="header">Matt Giampietro</div> */}
-        {/* <div className="meta"> */}
-        {/* <p>Secretary</p> */}
-        {/* </div> */}
-        {/* <div className="description"> */}
-        {/* Matthew is an interior designer living in New York. */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </Flip> */}
-        {/* <Flip left delay={3500} duration={2000}> */}
-        {/* <div className="blue card"> */}
-        {/* <div className="image"> */}
-        {/* <img alt={'people'} src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"/> */}
-        {/* </div> */}
-        {/* <div className="content"> */}
-        {/* <div className="header">Matt Giampietro</div> */}
-        {/* <div className="meta"> */}
-        {/* <p>Secretary</p> */}
-        {/* </div> */}
-        {/* <div className="description"> */}
-        {/* Matthew is an interior designer living in New York. */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </Flip> */}
-        {/* <Flip right delay={4000} duration={2000}> */}
-        {/* <div className="violet card"> */}
-        {/* <div className="image"> */}
-        {/* <img alt={'people'} src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"/> */}
-        {/* </div> */}
-        {/* <div className="content"> */}
-        {/* <div className="header">Matt Giampietro</div> */}
-        {/* <div className="meta"> */}
-        {/* <p>Secretary</p> */}
-        {/* </div> */}
-        {/* <div className="description"> */}
-        {/* Matthew is an interior designer living in New York. */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </Flip> */}
-        {/* </div> */}
       </div>
     );
   }

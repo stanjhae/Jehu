@@ -9,9 +9,7 @@ const HeaderLinkContainer = props => {
       <div className="ui simple dropdown item ">
         {name}
         <i className="dropdown icon" />
-        <div className="menu">
-          {children}
-        </div>
+        <div className="menu">{children}</div>
       </div>
     </div>
   );

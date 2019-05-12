@@ -1,0 +1,110 @@
+@media only screen and (min-width: 900px) {
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 150px;
+        padding-bottom: 100px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .contactTextDiv {
+        padding: 60px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+    }
+
+    .contactFormDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+    }
+
+    .contactTextDiv h1 {
+        font-size: 60px;
+    }
+}
+
+form input, textarea {
+  border: 1px solid;
+}
+
+.submitButton {
+    font-size: 18px;
+    background-color: #1E90FF;
+    text-decoration: none;
+    outline: none;
+    border-width: 0;
+    color: #FFF;
+    max-height: 50px;
+    height: 50px;
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.emailInput {
+    font-weight: bold;
+    font-size: 18px;
+    width: 60%;
+    border-width: 0 0 0.5px 0;
+    border-bottom-color: #ddd;
+    margin-bottom: 40px;
+}
+
+
+.messageInput {
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 60%;
+    border-width: 0 0 0.5px 0 !important;
+    border-bottom-color: #ddd;
+}
+
+.messageInput:focus,
+.emailInput:focus {
+    outline: none;
+    border-bottom-color: black;
+}
+
+.contactTextDiv p {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact {
+        padding-top: 100px;
+        padding-bottom: 70px;
+        width: 100%;
+    }
+
+    .contactTextDiv {
+        margin-bottom: 10%;
+        padding: 20px;
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .contactFormDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contactTextDiv h1 {
+        font-size: 40px;
+    }
+
+    .messageInput,
+    .emailInput {
+        width: 90%;
+    }
+}

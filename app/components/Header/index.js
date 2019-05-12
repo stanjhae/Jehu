@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import HeaderLink from './HeaderLink';
+import { Link } from 'react-router-dom';
 import menuButton from '../../images/menuButton.png';
 import SideBar from '../sideBar/SideBar';
 import Backdrop from '../backdrop/Backdrop';
@@ -11,18 +11,20 @@ class Header extends React.Component {
     sideBarIsShowing: false,
   };
 
-  toggleSideBar = () => { this.setState({sideBarIsShowing: !this.state.sideBarIsShowing})};
+  toggleSideBar = () => {
+    this.setState({ sideBarIsShowing: !this.state.sideBarIsShowing });
+  };
 
   render() {
     const { sideBarIsShowing } = this.state;
     return (
       <>
         <header className="header">
-          <HeaderLink className="headerNameDiv" to="/">
+          <Link className="headerNameDiv" to="/">
             <div>
               <p>JEHU</p>
             </div>
-          </HeaderLink>
+          </Link>
 
           <div className="navigationLinksContainer">
             <HeaderLinkContainer name="About">
@@ -32,7 +34,10 @@ class Header extends React.Component {
             <HeaderLinkContainer name="Our Services">
               <HeaderSubLink linkTo="/process" name="JEHU Process" />
               <HeaderSubLink linkTo="/startups" name="Start-Ups" />
-              <HeaderSubLink linkTo="/businessConsulting" name="Business Consulting" />
+              <HeaderSubLink
+                linkTo="/businessConsulting"
+                name="Business Consulting"
+              />
               <HeaderSubLink linkTo="/translation" name="Translation" />
               <HeaderSubLink linkTo="/itDev" name="IT Development" />
               <HeaderSubLink linkTo="/itCons" name="IT Consulting" />

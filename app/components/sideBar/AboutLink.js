@@ -22,7 +22,7 @@ class AboutLink extends React.Component {
 
         {showSubs && (
           <div onClick={onClickSubLink} className="navigationSubLinks">
-           <SideBarSubLink linkTo={'/about/who'} text={'Who are we?'}/>
+            <SideBarSubLink linkTo="/about/who" text="Who are we?" />
           </div>
         )}
       </>

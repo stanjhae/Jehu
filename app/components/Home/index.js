@@ -8,13 +8,8 @@ import React from 'react';
 import { Fade, Bounce } from 'react-reveal';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './index.css';
-import Header from 'components/Header';
 import { Helmet } from 'react-helmet';
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
-// import { FormattedMessage } from 'react-intl';
-// import messages from './messages';
-
-/* eslint-disable react/prefer-stateless-function */
 export class Home extends React.PureComponent {
   render() {
     return (
@@ -23,12 +18,7 @@ export class Home extends React.PureComponent {
           <title>Home</title>
           <meta name="description" content="Home" />
         </Helmet>
-        <div className="ui center aligned grid homeHeader homePic pic1">
-          <div className="row headerRow">
-            <div className="left floated column">
-              <Header />
-            </div>
-          </div>
+        <div className="ui center aligned middle aligned grid homeHeader homePic pic1">
           <div className="row">
             <div className="column headerColumn">
               <Fade top duration={2000}>
