@@ -8,10 +8,10 @@
   background-image: url('./biz2.jpg');
   background-position: center;
   background-size: cover;
-  min-height: 60vh;
+  min-height: 70vh;
 }
 .bizConsulting2{
-  /*background-image: url('./biz1.jpg');*/
+  background-image: url('./biz1.jpg');
 }
 .bizConsulting3{
   background-image: url('./social.jpg');

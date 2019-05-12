@@ -2,20 +2,15 @@
   background-position: center;
   background-size: cover;
   /*background-attachment: fixed;*/
-  height: 60vh;
+  min-height: 70vh;
 }
-.who1 {
-  /*background-image: url('./who1.jpg');*/
+.who1{
+  background-image: url('./who1.jpg');
 }
 .who2{
   background-image: url('./counter.jpg');
   background-position: center;
   background-size: cover;
-}
-
-.centeredd {
-  display: flex;
-  align-items: center !important;
 }
 
 .who3{

@@ -4,8 +4,7 @@
 .homePic{
   background-position: center;
   background-size: cover;
-  /*background-attachment: fixed;*/
-  height: 60vh;
+  min-height: 70vh;
 }
 
 .homeScreen {

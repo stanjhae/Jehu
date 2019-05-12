@@ -11,7 +11,7 @@
   background-image: url('./engr1.jpg');
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  min-height: 70vh;
 }
 .engineering2{
   background-image: url('./engr2.jpg');

@@ -21,10 +21,10 @@
   font-size: 1.5rem;
 }
 .startup1{
-  /*background-image: url('./startup4.jpg');*/
+  background-image: url('./startup4.jpg');
   background-position: center;
   background-size: cover;
-  min-height: 60vh;
+  min-height: 70vh;
 }
 .startup2{
   background-image: url('./startup1.jpg');

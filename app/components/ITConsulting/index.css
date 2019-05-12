@@ -2,5 +2,5 @@
   background-image: url('./itCons.jpg');
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  min-height: 70vh;
 }

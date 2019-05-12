@@ -1,10 +1,10 @@
 .process{
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  min-height: 70vh;
 }
 .process1{
-  /*background-image: url('./process1.jpg');*/
+  background-image: url('./process1.jpg');
 }
 .processSteps{
   padding-top: 30px;

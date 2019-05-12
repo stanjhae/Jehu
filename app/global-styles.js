@@ -37,9 +37,14 @@ const GlobalStyle = createGlobalStyle`
 }
 h1{
   font-size: 50px !important;
+  color: #fff !important;
 }
 h2{
   font-size: 32px !important;
+}
+.centeredd {
+  display: flex;
+  align-items: center !important;
 }
 .plainBackground{
   min-height: 60vh;
@@ -82,7 +87,7 @@ h2{
     background-color:#1A1C1D;
     color: #fff !important;
 }
-.footer h1, .footer h2, .App-header h1, .debmunTop h1{
+.footer h1, .footer h2, .App-header h1{
     color: #fff !important;
 }`;
 
