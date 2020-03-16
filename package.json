@@ -77,7 +77,7 @@
     "lodash": "4.17.11",
     "magic-grid": "^3.2.4",
     "magic-grid-react": "^0.3.1",
-    "minimist": "1.2.0",
+    "minimist": "1.2.2",
     "prop-types": "15.6.2",
     "react": "16.6.0",
     "react-countdown-now": "^2.1.0",
