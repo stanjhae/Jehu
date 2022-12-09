@@ -64,7 +64,7 @@
     "connected-react-router": "4.5.0",
     "cross-env": "5.2.0",
     "emotion": "^10.0.9",
-    "express": "4.16.4",
+    "express": "4.17.3",
     "fontfaceobserver": "2.0.13",
     "google-maps-react": "^2.0.2",
     "history": "4.7.2",
